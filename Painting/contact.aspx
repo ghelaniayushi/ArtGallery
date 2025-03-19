@@ -6,15 +6,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Art Web</title>
+
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/global.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&display=swap" rel="stylesheet">
     <script src="js/bootstrap.bundle.min.js"></script>
 
-    </head>
-    <body>
+   
         <section id="header">
             <nav class="navbar navbar-expand-md navbar-light" id="navbar_sticky">
                 <div class="container-xl">
@@ -40,7 +39,7 @@
                                 <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="product.aspx">Product</a></li>
                                     <li><a class="dropdown-item border-0" href="detail.aspx">Product Detail</a></li>
-                                     <li><a class="dropdown-item border-0" href="Add Product.aspx">Add Product</a></li>
+                                    <li><a class="dropdown-item border-0" href="Add Product.aspx">Add Product</a></li>
                                 </ul>
                             </li>
 
@@ -65,6 +64,9 @@
                             <li class="nav-item">
                                 <a class="nav-link active" href="contact.aspx">Contact</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="reg.aspx">Registraton</a>
+                            </li>
 
                         </ul>
                     </div>
@@ -88,7 +90,7 @@
                 </div>
             </div>
         </section>
-    </section>
+    
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
     <section id="contact" class="p_4">
@@ -104,7 +106,7 @@
                         <h3 class="mb-4">ARTIST INFO</h3>
                         <p class="mb-4"><i class="fa fa-map-marker me-2 col_pink"></i><span class="text-white fw-bold me-2">Address:</span> Kalavad Road,Rajkot-345267</p>
                         <p class="mb-4"><i class="fa fa-phone me-2 col_pink"></i><span class="text-white fw-bold me-2">Phone:</span> +91 45678 39023</p>
-                       <%-- <p class="mb-4"><i class="fa fa-paperclip me-2 col_pink"></i><span class="text-white fw-bold me-2">Fax:</span> +91 98805 67435</p>--%>
+                        <%-- <p class="mb-4"><i class="fa fa-paperclip me-2 col_pink"></i><span class="text-white fw-bold me-2">Fax:</span> +91 98805 67435</p>--%>
                         <p class="mb-4"><i class="fa fa-envelope me-2 col_pink"></i><span class="text-white fw-bold me-2">Email:</span> <a href="#">info@gmail.com</a></p>
                         <p><i class="fa fa-globe me-2 col_pink"></i><span class="text-white fw-bold me-2">Web:</span> <a href="#">info@gmail.com</a></p>
                         <ul class="social-network social-circle mb-0 mt-4">
@@ -144,27 +146,27 @@
                                 <asp:TextBox ID="txtphno" class="form-control" placeholder="Phone no" runat="server"></asp:TextBox>
                             </div>
                         </div>
-                         <%--<div class="col-md-4">
+                        <%--<div class="col-md-4">
                             <div class="contact_2l1i">
                                 <input class="form-control" placeholder="Website" type="text">
                                 <asp:TextBox ID="TextBox4" placeholder="" runat="server"></asp:TextBox>
                             </div>
                         </div>--%>
 
-                    
-                    <div class="contact_2l1 mt-3 row">
-                        <div class="col-md-12">
-                            <div class="contact_2l1i">
-                                <%--<textarea placeholder="Address" class="form-control form_text" id="txtadd"></textarea>--%>
-                                <asp:TextBox ID="txtadd" placeholder="Address" class="form-control form_text" runat="server"></asp:TextBox>
-                                <h6 class="mt-3 mb-0 text-uppercase"><%--<a class="button ps-4 pe-4 pt-3 pb-3" href="#">COMMENT</a>--%>
-                                    <asp:Button ID="Button4" class="button ps-4 pe-4 pt-3 pb-3"  runat="server" Text="Submit" OnClick="Button4_Click1" />
-                                </h6>
+
+                        <div class="contact_2l1 mt-3 row">
+                            <div class="col-md-12">
+                                <div class="contact_2l1i">
+                                    <%--<textarea placeholder="Address" class="form-control form_text" id="txtadd"></textarea>--%>
+                                    <asp:TextBox ID="txtadd" placeholder="Address" class="form-control form_text" runat="server"></asp:TextBox>
+                                    <h6 class="mt-3 mb-0 text-uppercase"><%--<a class="button ps-4 pe-4 pt-3 pb-3" href="#">COMMENT</a>--%>
+                                        <asp:Button ID="Button4" class="button ps-4 pe-4 pt-3 pb-3" runat="server" Text="Submit" OnClick="Button4_Click1" />
+                                    </h6>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                    </div>
                 <div class="col-md-3">
                     <div class="contact_2r">
                         <h5 class="mb-3">LONDON OFFICE</h5>

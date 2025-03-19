@@ -1,13 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 using System.Data;
 using System.Configuration;
-
 
 namespace Painting
 {
@@ -21,30 +17,32 @@ namespace Painting
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            getcon();
+            if (!IsPostBack)
+            {
+                getcon();
+            }
         }
+
         void getcon()
         {
             cs = new Class1();
             cs.startcon();
         }
 
-        //protected void Button4_Click(object sender, EventArgs e)
-        //{
-        //    if(Button4.Text=="SUBMIT")
-        //    {
-        //        getcon();
-
-        //        cs.insert(txtnm.Text, txtemail.Text, txtphno.Text, txtadd.Text);
-        //    }
-        //}
-
         protected void Button4_Click1(object sender, EventArgs e)
         {
-            if(Button4.Text=="SUBMIT")
+            try
             {
-                getcon();
-                cs.insert(txtnm.Text, txtemail.Text, txtphno.Text, txtadd.Text);
+                if (Button4.Text == "Submit")
+                {
+                    getcon();
+                    cs.insert(txtnm.Text, txtemail.Text, txtphno.Text, txtadd.Text);
+                    Response.Write("<script>alert('Data Inserted Successfully');</script>");
+                }
+            }
+            catch (Exception ex)
+            {
+                Response.Write("<script>alert('Error: " + ex.Message + "');</script>");
             }
         }
     }

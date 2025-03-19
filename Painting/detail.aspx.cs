@@ -13,5 +13,10 @@ namespace Painting
         {
 
         }
+
+        protected void Button4_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Add Product.aspx");
+        }
     }
 }

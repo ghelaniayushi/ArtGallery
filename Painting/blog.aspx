@@ -66,7 +66,9 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="contact.aspx">Contact</a>
                             </li>
-
+                            <li class="nav-item">
+                                        <a class="nav-link" href="reg.aspx">Registraton</a>
+                                    </li>
                         </ul>
                     </div>
                 </div>

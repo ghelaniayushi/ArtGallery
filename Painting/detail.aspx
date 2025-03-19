@@ -41,7 +41,7 @@
                                 <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="product.aspx">Product</a></li>
                                     <li><a class="dropdown-item border-0" href="detail.aspx">Product Detail</a></li>
-                                     <li><a class="dropdown-item border-0" href="Add Product.aspx">Add Product</a></li>
+                                    <li><a class="dropdown-item border-0" href="Add Product.aspx">Add Product</a></li>
                                 </ul>
                             </li>
 
@@ -65,6 +65,9 @@
 
                             <li class="nav-item">
                                 <a class="nav-link" href="contact.aspx">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="reg.aspx">Registraton</a>
                             </li>
 
                         </ul>
@@ -140,10 +143,11 @@
                         <h4 class="mt-3"><span class="me-2">RS.600</span> <%--<span class="fs-6 text-decoration-line-through col_light">$28.00</span>--%></h4>
                         <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
                         <input type="number" min="1" value="1" class="form-control mt-2 bg_dark" placeholder="Qty" style="width: 80px; height: 49px; margin-right: 10px; float: left;">
-                        <h6 class="mt-4 mb-0 text-uppercase"><a class="button" href="#"><i class="fa fa-shopping-cart bg-white col_pink p-3"></i><%--<span class="ps-3 pe-3">Add To Cart</span>--%> <asp:Button ID="Button4" runat="server"  Text="Add to cart" /></a></h6>
+                        <h6 class="mt-4 mb-0 text-uppercase"><a class="button" href="#"><i class="fa fa-shopping-cart bg-white col_pink p-3"></i><%--<span class="ps-3 pe-3">Add To Cart</span>--%>
+                            <asp:Button ID="Button4" runat="server" Text="Add to cart" OnClick="Button4_Click" /></a></h6>
                         <p class="mt-3 mb-2">The product is already in the wishlist! <a class="col_pink hover_white" href="#">Browse Wishlist</a></p>
                         <p>Category: <a class="col_pink hover_white" href="#">Posters</a></p>
-                       <%-- <ul class="social-network social-circle mb-0">
+                        <%-- <ul class="social-network social-circle mb-0">
                             <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-skype"></i></a></li>
                             <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
@@ -161,12 +165,11 @@
                                 <span class="d-md-block">DESCRIPTION</span>
                             </a>
                         </li>
-                       <%-- <li class="nav-item d-inline-block">
+                        <%-- <li class="nav-item d-inline-block">
                             <a href="#profile" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
                                 <span class="d-md-block">REVIEW (4)</span>
                             </a>
                         </li>--%>
-
                     </ul>
                 </div>
             </div>
@@ -327,157 +330,157 @@
 
                 </div>
             </div>--%>
-            <div class="row detail_4 mt-4">
-                <h4 class="mb-0">RELATED PRODUCTS</h4>
-            </div>
-            <div class="row product_2">
-                <div class="col-md-3">
-                    <div class="prod_main p-1 bg-white clearfix">
-                        <div class="product_2im clearfix position-relative">
-                            <div class="product_2imi clearfix">
-                                <div class="grid clearfix">
-                                    <figure class="effect-jazz mb-0">
-                                        <a href="#">
-                                            <img src="img/45.jpg" class="w-100" alt="abc"></a>
-                                    </figure>
+                    <div class="row detail_4 mt-4">
+                        <h4 class="mb-0">RELATED PRODUCTS</h4>
+                    </div>
+                    <div class="row product_2">
+                        <div class="col-md-3">
+                            <div class="prod_main p-1 bg-white clearfix">
+                                <div class="product_2im clearfix position-relative">
+                                    <div class="product_2imi clearfix">
+                                        <div class="grid clearfix">
+                                            <figure class="effect-jazz mb-0">
+                                                <a href="#">
+                                                    <img src="img/45.jpg" class="w-100" alt="abc"></a>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <div class="product_2imi1 position-absolute clearfix w-100 top-0 text-center">
+                                        <ul class="mb-0">
+                                            <li class="d-inline-block"><a class="bg_pink text-white d-block" href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                            <li class="d-inline-block"><a class="bg_pink text-white d-block" href="#"><i class="fa fa-heart-o"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product_2im1 position-relative clearfix">
+                                    <div class="clearfix product_2im1i text-center pt-3 pb-4">
+                                        <h5 class="font_14 text-uppercase"><a class="col_dark" href="#">Abstract drip art</a></h5>
+                                        <span class="font_12 col_yell">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-o"></i>
+                                        </span>
+                                        <h6 class="col_dark mt-2 mb-0">RS.970</h6>
+                                    </div>
+                                    <div class="clearfix product_2im1i1 text-center position-absolute w-100">
+                                        <%--<h6 class="d-inline-block bg_pink p-2 ps-3 pe-3"><span class="text-decoration-line-through me-2 col_gray">$19.00</span> $17.00</h6--%>>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="product_2imi1 position-absolute clearfix w-100 top-0 text-center">
-                                <ul class="mb-0">
-                                    <li class="d-inline-block"><a class="bg_pink text-white d-block" href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                                    <li class="d-inline-block"><a class="bg_pink text-white d-block" href="#"><i class="fa fa-heart-o"></i></a></li>
-                                </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="prod_main p-1 bg-white clearfix">
+                                <div class="product_2im clearfix position-relative">
+                                    <div class="product_2imi clearfix">
+                                        <div class="grid clearfix">
+                                            <figure class="effect-jazz mb-0">
+                                                <a href="#">
+                                                    <img src="img/46.jpg" class="w-100" alt="abc"></a>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <div class="product_2imi1 position-absolute clearfix w-100 top-0 text-center">
+                                        <ul class="mb-0">
+                                            <li class="d-inline-block"><a class="bg_pink text-white d-block" href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                            <li class="d-inline-block"><a class="bg_pink text-white d-block" href="#"><i class="fa fa-heart-o"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product_2im1 position-relative clearfix">
+                                    <div class="clearfix product_2im1i text-center pt-3 pb-4">
+                                        <h5 class="font_14 text-uppercase"><a class="col_dark" href="#">Shiv Parvati</a></h5>
+                                        <span class="font_12 col_yell">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-half-o"></i>
+                                            <i class="fa fa-star-o"></i>
+                                        </span>
+                                        <h6 class="col_dark mt-2 mb-0">RS.1500</h6>
+                                    </div>
+                                    <div class="clearfix product_2im1i1 text-center position-absolute w-100">
+                                        <%-- <h6 class="d-inline-block bg_pink p-2 ps-3 pe-3"><span class="text-decoration-line-through me-2 col_gray">$31.00</span> $27.00</h6>--%>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="product_2im1 position-relative clearfix">
-                            <div class="clearfix product_2im1i text-center pt-3 pb-4">
-                                <h5 class="font_14 text-uppercase"><a class="col_dark" href="#">Abstract drip art</a></h5>
-                                <span class="font_12 col_yell">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-o"></i>
-                                </span>
-                                <h6 class="col_dark mt-2 mb-0">RS.970</h6>
+                        <div class="col-md-3">
+                            <div class="prod_main p-1 bg-white clearfix">
+                                <div class="product_2im clearfix position-relative">
+                                    <div class="product_2imi clearfix">
+                                        <div class="grid clearfix">
+                                            <figure class="effect-jazz mb-0">
+                                                <a href="#">
+                                                    <img src="img/47.jpg" class="w-100" alt="abc"></a>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <div class="product_2imi1 position-absolute clearfix w-100 top-0 text-center">
+                                        <ul class="mb-0">
+                                            <li class="d-inline-block"><a class="bg_pink text-white d-block" href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                            <li class="d-inline-block"><a class="bg_pink text-white d-block" href="#"><i class="fa fa-heart-o"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product_2im1 position-relative clearfix">
+                                    <div class="clearfix product_2im1i text-center pt-3 pb-4">
+                                        <h5 class="font_14 text-uppercase"><a class="col_dark" href="#">Dark Acrylic</a></h5>
+                                        <span class="font_12 col_yell">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </span>
+                                        <h6 class="col_dark mt-2 mb-0">Rs.750</h6>
+                                    </div>
+                                    <div class="clearfix product_2im1i1 text-center position-absolute w-100">
+                                        <%--<h6 class="d-inline-block bg_pink p-2 ps-3 pe-3"><span class="text-decoration-line-through me-2 col_gray">$29.00</span> $23.00</h6>--%>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="clearfix product_2im1i1 text-center position-absolute w-100">
-                                <%--<h6 class="d-inline-block bg_pink p-2 ps-3 pe-3"><span class="text-decoration-line-through me-2 col_gray">$19.00</span> $17.00</h6--%>>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="prod_main p-1 bg-white clearfix">
+                                <div class="product_2im clearfix position-relative">
+                                    <div class="product_2imi clearfix">
+                                        <div class="grid clearfix">
+                                            <figure class="effect-jazz mb-0">
+                                                <a href="#">
+                                                    <img src="img/40.jpg" class="w-100" alt="abc"></a>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <div class="product_2imi1 position-absolute clearfix w-100 top-0 text-center">
+                                        <ul class="mb-0">
+                                            <li class="d-inline-block"><a class="bg_pink text-white d-block" href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                            <li class="d-inline-block"><a class="bg_pink text-white d-block" href="#"><i class="fa fa-heart-o"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product_2im1 position-relative clearfix">
+                                    <div class="clearfix product_2im1i text-center pt-3 pb-4">
+                                        <h5 class="font_14 text-uppercase"><a class="col_dark" href="#">Abstract drip art</a></h5>
+                                        <span class="font_12 col_yell">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-half-o"></i>
+                                        </span>
+                                        <h6 class="col_dark mt-2 mb-0">RS.970</h6>
+                                    </div>
+                                    <div class="clearfix product_2im1i1 text-center position-absolute w-100">
+                                        <%--  <h6 class="d-inline-block bg_pink p-2 ps-3 pe-3"><span class="text-decoration-line-through me-2 col_gray">$49.00</span> $37.00</h6>--%>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="prod_main p-1 bg-white clearfix">
-                        <div class="product_2im clearfix position-relative">
-                            <div class="product_2imi clearfix">
-                                <div class="grid clearfix">
-                                    <figure class="effect-jazz mb-0">
-                                        <a href="#">
-                                            <img src="img/46.jpg" class="w-100" alt="abc"></a>
-                                    </figure>
-                                </div>
-                            </div>
-                            <div class="product_2imi1 position-absolute clearfix w-100 top-0 text-center">
-                                <ul class="mb-0">
-                                    <li class="d-inline-block"><a class="bg_pink text-white d-block" href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                                    <li class="d-inline-block"><a class="bg_pink text-white d-block" href="#"><i class="fa fa-heart-o"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product_2im1 position-relative clearfix">
-                            <div class="clearfix product_2im1i text-center pt-3 pb-4">
-                                <h5 class="font_14 text-uppercase"><a class="col_dark" href="#">Shiv Parvati</a></h5>
-                                <span class="font_12 col_yell">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-o"></i>
-                                    <i class="fa fa-star-o"></i>
-                                </span>
-                                <h6 class="col_dark mt-2 mb-0">RS.1500</h6>
-                            </div>
-                            <div class="clearfix product_2im1i1 text-center position-absolute w-100">
-                               <%-- <h6 class="d-inline-block bg_pink p-2 ps-3 pe-3"><span class="text-decoration-line-through me-2 col_gray">$31.00</span> $27.00</h6>--%>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="prod_main p-1 bg-white clearfix">
-                        <div class="product_2im clearfix position-relative">
-                            <div class="product_2imi clearfix">
-                                <div class="grid clearfix">
-                                    <figure class="effect-jazz mb-0">
-                                        <a href="#">
-                                            <img src="img/47.jpg" class="w-100" alt="abc"></a>
-                                    </figure>
-                                </div>
-                            </div>
-                            <div class="product_2imi1 position-absolute clearfix w-100 top-0 text-center">
-                                <ul class="mb-0">
-                                    <li class="d-inline-block"><a class="bg_pink text-white d-block" href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                                    <li class="d-inline-block"><a class="bg_pink text-white d-block" href="#"><i class="fa fa-heart-o"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product_2im1 position-relative clearfix">
-                            <div class="clearfix product_2im1i text-center pt-3 pb-4">
-                                <h5 class="font_14 text-uppercase"><a class="col_dark" href="#">Dark Acrylic</a></h5>
-                                <span class="font_12 col_yell">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                </span>
-                                <h6 class="col_dark mt-2 mb-0">Rs.750</h6>
-                            </div>
-                            <div class="clearfix product_2im1i1 text-center position-absolute w-100">
-                                <%--<h6 class="d-inline-block bg_pink p-2 ps-3 pe-3"><span class="text-decoration-line-through me-2 col_gray">$29.00</span> $23.00</h6>--%>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="prod_main p-1 bg-white clearfix">
-                        <div class="product_2im clearfix position-relative">
-                            <div class="product_2imi clearfix">
-                                <div class="grid clearfix">
-                                    <figure class="effect-jazz mb-0">
-                                        <a href="#">
-                                            <img src="img/40.jpg" class="w-100" alt="abc"></a>
-                                    </figure>
-                                </div>
-                            </div>
-                            <div class="product_2imi1 position-absolute clearfix w-100 top-0 text-center">
-                                <ul class="mb-0">
-                                    <li class="d-inline-block"><a class="bg_pink text-white d-block" href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                                    <li class="d-inline-block"><a class="bg_pink text-white d-block" href="#"><i class="fa fa-heart-o"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="product_2im1 position-relative clearfix">
-                            <div class="clearfix product_2im1i text-center pt-3 pb-4">
-                                <h5 class="font_14 text-uppercase"><a class="col_dark" href="#">Abstract drip art</a></h5>
-                                <span class="font_12 col_yell">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-o"></i>
-                                </span>
-                                <h6 class="col_dark mt-2 mb-0">RS.970</h6>
-                            </div>
-                            <div class="clearfix product_2im1i1 text-center position-absolute w-100">
-                              <%--  <h6 class="d-inline-block bg_pink p-2 ps-3 pe-3"><span class="text-decoration-line-through me-2 col_gray">$49.00</span> $37.00</h6>--%>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-        </div>
+                </div>
     </section>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder3" runat="server">
@@ -570,7 +573,7 @@
                             <asp:Button ID="Button1" runat="server" Text="WaterColour" />
                             <asp:Button ID="Button2" runat="server" Text="Oil Paster" />
                             <asp:Button ID="Button3" runat="server" Text="Acrylic" />
-                           <%-- <li class="d-inline-block"><a class="d-block" href="#">Analyze</a></li>
+                            <%-- <li class="d-inline-block"><a class="d-block" href="#">Analyze</a></li>
                             <li class="d-inline-block"><a class="d-block" href="#">Audio</a></li>
                             <li class="d-inline-block"><a class="d-block" href="#">Blog</a></li>
                             <li class="d-inline-block"><a class="d-block" href="#">Business</a></li>
