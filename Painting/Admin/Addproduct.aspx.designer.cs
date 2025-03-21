@@ -8,9 +8,9 @@
 //------------------------------------------------------------------------------
 
 
-namespace Painting.User.js
+namespace Painting.Admin
 {
-    public partial class User
+    public partial class Addproduct
     {
     }
 }

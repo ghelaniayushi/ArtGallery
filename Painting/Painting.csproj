@@ -67,10 +67,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="about.aspx" />
-    <Content Include="about.html" />
-    <Content Include="Add Product.aspx" />
-    <Content Include="Admin\admin.aspx" />
+    <Content Include="Home.aspx" />
+    <Content Include="User\about.aspx" />
+    <Content Include="User\Add Product.aspx" />
+    <Content Include="Admin\Addproduct.aspx" />
     <Content Include="Admin\css\about.css" />
     <Content Include="Admin\css\blog.css" />
     <Content Include="Admin\css\bootstrap.min.css" />
@@ -139,15 +139,11 @@
     <Content Include="App_Data\Art_db_log.ldf">
       <DependentUpon>Art_db.mdf</DependentUpon>
     </Content>
-    <Content Include="blog_detail.aspx" />
-    <Content Include="blog.aspx" />
-    <Content Include="blog.html" />
-    <Content Include="blog_detail.html" />
-    <Content Include="cart.aspx" />
-    <Content Include="cart.html" />
-    <Content Include="checkout.aspx" />
-    <Content Include="checkout.html" />
-    <Content Include="contact.aspx" />
+    <Content Include="User\blog_detail.aspx" />
+    <Content Include="User\blog.aspx" />
+    <Content Include="User\cart.aspx" />
+    <Content Include="User\checkout.aspx" />
+    <Content Include="User\contact.aspx" />
     <Content Include="css\about.css" />
     <Content Include="css\blog.css" />
     <Content Include="css\bootstrap.min.css" />
@@ -157,9 +153,8 @@
     <Content Include="css\global.css" />
     <Content Include="css\index.css" />
     <Content Include="css\product.css" />
-    <Content Include="detail.aspx" />
+    <Content Include="User\detail.aspx" />
     <Content Include="fonts\fontawesome-webfont.svg" />
-    <Content Include="Home.aspx" />
     <Content Include="img\1.jpg" />
     <Content Include="img\10.jpg" />
     <Content Include="img\11.jpg" />
@@ -214,7 +209,8 @@
     <Content Include="img\8.jpg" />
     <Content Include="img\9.jpg" />
     <Content Include="js\bootstrap.bundle.min.js" />
-    <Content Include="product.aspx" />
+    <Content Include="Admin\Login.aspx" />
+    <Content Include="User\product.aspx" />
     <Content Include="User\css\about.css" />
     <Content Include="User\css\blog.css" />
     <Content Include="User\css\bootstrap.min.css" />
@@ -279,77 +275,12 @@
     <Content Include="User\img\8.jpg" />
     <Content Include="User\img\9.jpg" />
     <Content Include="User\js\bootstrap.bundle.min.js" />
-    <Content Include="User\js\User.aspx" />
+    <Content Include="User\User_Home.aspx" />
     <Content Include="Web.config" />
-    <Content Include="reg.aspx" />
+    <Content Include="User\reg.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="about.aspx.cs">
-      <DependentUpon>about.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="about.aspx.designer.cs">
-      <DependentUpon>about.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Add Product.aspx.cs">
-      <DependentUpon>Add Product.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Add Product.aspx.designer.cs">
-      <DependentUpon>Add Product.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\admin.aspx.cs">
-      <DependentUpon>admin.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\admin.aspx.designer.cs">
-      <DependentUpon>admin.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="blog_detail.aspx.cs">
-      <DependentUpon>blog_detail.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="blog_detail.aspx.designer.cs">
-      <DependentUpon>blog_detail.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="blog.aspx.cs">
-      <DependentUpon>blog.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="blog.aspx.designer.cs">
-      <DependentUpon>blog.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="cart.aspx.cs">
-      <DependentUpon>cart.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="cart.aspx.designer.cs">
-      <DependentUpon>cart.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="checkout.aspx.cs">
-      <DependentUpon>checkout.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="checkout.aspx.designer.cs">
-      <DependentUpon>checkout.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Class1.cs" />
-    <Compile Include="Class2.cs" />
-    <Compile Include="Class3.cs" />
-    <Compile Include="contact.aspx.cs">
-      <DependentUpon>contact.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="contact.aspx.designer.cs">
-      <DependentUpon>contact.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="detail.aspx.cs">
-      <DependentUpon>detail.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="detail.aspx.designer.cs">
-      <DependentUpon>detail.aspx</DependentUpon>
-    </Compile>
+    <Compile Include="Admin\Class1.cs" />
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -357,11 +288,84 @@
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
-    <Compile Include="product.aspx.cs">
+    <Compile Include="User\about.aspx.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\about.aspx.designer.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Add Product.aspx.cs">
+      <DependentUpon>Add Product.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Add Product.aspx.designer.cs">
+      <DependentUpon>Add Product.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Addproduct.aspx.cs">
+      <DependentUpon>Addproduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Addproduct.aspx.designer.cs">
+      <DependentUpon>Addproduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\blog_detail.aspx.cs">
+      <DependentUpon>blog_detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\blog_detail.aspx.designer.cs">
+      <DependentUpon>blog_detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\blog.aspx.cs">
+      <DependentUpon>blog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\blog.aspx.designer.cs">
+      <DependentUpon>blog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\cart.aspx.cs">
+      <DependentUpon>cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\cart.aspx.designer.cs">
+      <DependentUpon>cart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\checkout.aspx.cs">
+      <DependentUpon>checkout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\checkout.aspx.designer.cs">
+      <DependentUpon>checkout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Class1.cs" />
+    <Compile Include="User\Class2.cs" />
+    <Compile Include="User\Class3.cs" />
+    <Compile Include="User\contact.aspx.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\contact.aspx.designer.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\detail.aspx.cs">
+      <DependentUpon>detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\detail.aspx.designer.cs">
+      <DependentUpon>detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\product.aspx.cs">
       <DependentUpon>product.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="product.aspx.designer.cs">
+    <Compile Include="User\product.aspx.designer.cs">
       <DependentUpon>product.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -372,19 +376,19 @@
     <Compile Include="Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
     </Compile>
-    <Compile Include="reg.aspx.cs">
+    <Compile Include="User\reg.aspx.cs">
       <DependentUpon>reg.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="reg.aspx.designer.cs">
+    <Compile Include="User\reg.aspx.designer.cs">
       <DependentUpon>reg.aspx</DependentUpon>
     </Compile>
-    <Compile Include="User\js\User.aspx.cs">
-      <DependentUpon>User.aspx</DependentUpon>
+    <Compile Include="User\User_Home.aspx.cs">
+      <DependentUpon>User_Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="User\js\User.aspx.designer.cs">
-      <DependentUpon>User.aspx</DependentUpon>
+    <Compile Include="User\User_Home.aspx.designer.cs">
+      <DependentUpon>User_Home.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

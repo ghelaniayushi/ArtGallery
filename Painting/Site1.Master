@@ -86,7 +86,9 @@
                                 </div>
                             </nav>
                         </section>
-                        
+            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+
                 <div class="main_2 clearfix">
                     <section id="center" class="center_home">
                         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -138,11 +140,6 @@
                         </div>
                     </section>
                 </div>
-
-            </asp:ContentPlaceHolder>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
-
-
 
                 <section id="port" class="p_4">
                     <div class="container-xl">

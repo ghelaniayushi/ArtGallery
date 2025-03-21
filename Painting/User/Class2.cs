@@ -20,6 +20,7 @@ namespace Painting
         {
             con = new SqlConnection(s);
             con.Open();
+            
         }
 
         public void insert(string fnm,string lnm,string email,string phno,string ct,string st,string add1,string add2,string pin,string com,string pay1,string pay2,string pay3)

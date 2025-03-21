@@ -8,9 +8,9 @@
 //------------------------------------------------------------------------------
 
 
-namespace Painting.Admin
+namespace Painting.User
 {
-    public partial class user
+    public partial class User_Home
     {
     }
 }
