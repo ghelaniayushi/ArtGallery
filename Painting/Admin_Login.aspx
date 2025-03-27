@@ -31,15 +31,7 @@
                     Style="width: 100%; padding: 12px; background: #C22752; color: white; border: none; border-radius: 8px; cursor: pointer; font-size: 16px; transition: 0.3s;"
                     onmouseover="this.style.background='#A11D44';" onmouseout="this.style.background='#C22752';" OnClick="btnLogin_Click" />
 
-                <asp:Label ID="lblMessage" runat="server" ForeColor="Red"></asp:Label>
-
-                <!-- Create an Account -->
-                <div style="text-align: center; margin-top: 15px;">
-                    <span style="color: #EAEAEA;">Don't have an account? </span>
-                    <a href="Register.aspx" style="color: #C22752; text-decoration: none; font-weight: bold;">Create an account</a>
-                </div>
-
-               
+                <asp:Label ID="lblMessage" runat="server" ForeColor="Red"></asp:Label>               
             </div>
         </div>
     </div>

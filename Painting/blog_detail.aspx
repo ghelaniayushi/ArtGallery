@@ -108,7 +108,7 @@
                                     <div class="grid clearfix">
                                         <figure class="effect-jazz mb-0">
                                             <a href="#">
-                                                <img src="img/1.jpg" height="480" class="w-100" alt="abc"></a>
+                                                <img src="img/14.jpg" height="480" class="w-100" alt="abc"></a>
                                         </figure>
                                     </div>
                                 </div>

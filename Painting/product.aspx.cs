@@ -21,12 +21,19 @@ namespace Painting
         protected void Page_Load(object sender, EventArgs e)
         {
             getcon();
+            display();
         }
         void getcon()
         {
             cs = new Class1();
             cs.startcon();
         }
+
+        protected void DataList1_SelectedIndexChanged1(object sender, EventArgs e)
+        {
+
+        }
+
         void display()
         {
             da = new SqlDataAdapter("select * from Pro_tbl",cs.startcon());
@@ -35,7 +42,7 @@ namespace Painting
             row = ds.Tables[0].Rows.Count;
             pg = new PagedDataSource();
             pg.AllowPaging = true;
-            pg.PageSize = 3;
+            pg.PageSize = 5;
             pg.DataSource = ds.Tables[0].DefaultView;
             pg.CurrentPageIndex = Convert.ToInt32(ViewState["pid"]);
             DataList1.DataSource = pg;
