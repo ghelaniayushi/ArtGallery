@@ -68,53 +68,34 @@
                         <div class="blog_1l1 bg_border p-3 mt-4">
                             <hr class="line_1 mt-0">
                             <h5 class="mb-4">CATEGORIES</h5>
-                            <h6 class="font_14"><a href="blog_detail.html"><i class="fa fa-circle-o me-1 col_pink font_8"></i>WaterColor <span class="pull-right">(03)</span></a></h6>
+                            <h6 class="font_14"><a href="Category.aspx"><i class="fa fa-circle-o me-1 col_pink font_8"></i>WaterColor <span class="pull-right">(03)</span></a></h6>
                             <hr>
                         
-                            <h6 class="font_14"><a href="blog_detail.html"><i class="fa fa-circle-o me-1 col_pink font_8"></i>Oil Pastel <span class="pull-right">(08)</span></a></h6>
+                            <h6 class="font_14"><a href="Category.aspx"><i class="fa fa-circle-o me-1 col_pink font_8"></i>Oil Pastel <span class="pull-right">(08)</span></a></h6>
                             <hr>
-                            <h6 class="font_14"><a href="blog_detail.html"><i class="fa fa-circle-o me-1 col_pink font_8"></i>Acrylic <span class="pull-right">(04)</span></a></h6>
+                            <h6 class="font_14"><a href="Category.aspx"><i class="fa fa-circle-o me-1 col_pink font_8"></i>Acrylic <span class="pull-right">(04)</span></a></h6>
                            
                            
                         </div>
-                       <%-- <div class="blog_1l1 bg_border p-3 mt-4">
-                            <hr class="line_1 mt-0">
-                            <h5 class="mb-4">Tags</h5>
-                            <ul class="mb-0">
-                                <li class="d-inline-block"><a class="d-block" href="blog_detail.html">Analyze</a></li>
-                                <li class="d-inline-block"><a class="d-block" href="blog_detail.html">Audio</a></li>
-                                <li class="d-inline-block"><a class="d-block" href="blog_detail.html">Blog</a></li>
-                                <li class="d-inline-block"><a class="d-block" href="blog_detail.html">Business</a></li>
-                                <li class="d-inline-block"><a class="d-block" href="blog_detail.html">Creative</a></li>
-                                <li class="d-inline-block"><a class="d-block" href="blog_detail.html">Design</a></li>
-                                <li class="d-inline-block"><a class="d-block" href="blog_detail.html">Experiment</a></li>
-                                <li class="d-inline-block"><a class="d-block" href="blog_detail.html">News</a></li>
-                                <li class="d-inline-block"><a class="d-block" href="blog_detail.html">Expertize</a></li>
-                                <li class="d-inline-block"><a class="d-block" href="blog_detail.html">Express</a></li>
-                                <li class="d-inline-block"><a class="d-block" href="blog_detail.html">Share</a></li>
-                                <li class="d-inline-block"><a class="d-block" href="blog_detail.html">Sustain</a></li>
-                                <li class="d-inline-block"><a class="d-block" href="blog_detail.html">Video</a></li>
-                                <li class="d-inline-block"><a class="d-block" href="blog_detail.html">Youtube</a></li>
-                            </ul>
-                        </div>--%>
+                  
                         <div class="blog_1l1 bg_border p-3 mt-4">
                             <hr class="line_1 mt-0">
                             <h5 class="mb-4">Types</h5>
-                            <h6 class="font_14"><a href="blog_detail.aspx"><i class="fa fa-circle-o me-1 col_pink font_8"></i>Animals <span class="pull-right">(15)</span> </a></h6>
+                            <h6 class="font_14"><a href="Addproduct.aspx"><i class="fa fa-circle-o me-1 col_pink font_8"></i>Animals <span class="pull-right">(15)</span> </a></h6>
                             <hr>
-                            <h6 class="font_14"><a href="blog_detail.aspx"><i class="fa fa-circle-o me-1 col_pink font_8"></i>Nature <span class="pull-right">(05)</span></a></h6>
+                            <h6 class="font_14"><a href="Addproduct.aspx"><i class="fa fa-circle-o me-1 col_pink font_8"></i>Nature <span class="pull-right">(05)</span></a></h6>
                             <hr>
-                            <h6 class="font_14"><a href="blog_detail.aspx"><i class="fa fa-circle-o me-1 col_pink font_8"></i>Flower <span class="pull-right">(07)</span></a></h6>
+                            <h6 class="font_14"><a href="Addproduct.aspx"><i class="fa fa-circle-o me-1 col_pink font_8"></i>Flower <span class="pull-right">(07)</span></a></h6>
                             <hr>
-                            <h6 class="font_14"><a href="blog_detail.aspx"><i class="fa fa-circle-o me-1 col_pink font_8"></i>Birds <span class="pull-right">(08)</span></a></h6>
+                            <h6 class="font_14"><a href="Addproduct.aspx"><i class="fa fa-circle-o me-1 col_pink font_8"></i>Birds <span class="pull-right">(08)</span></a></h6>
                             <hr>
-                            <h6 class="font_14"><a href="blog_detail.aspx"><i class="fa fa-circle-o me-1 col_pink font_8"></i>Sculpture <span class="pull-right">(04)</span></a></h6>
+                            <h6 class="font_14"><a href="Addproduct.aspx"><i class="fa fa-circle-o me-1 col_pink font_8"></i>Sculpture <span class="pull-right">(04)</span></a></h6>
                             <hr>
-                            <h6 class="font_14"><a href="blog_detail.aspx"><i class="fa fa-circle-o me-1 col_pink font_8"></i>Sapta Ras <span class="pull-right">(05)</span></a></h6>
+                            <h6 class="font_14"><a href="Addproduct.aspx"><i class="fa fa-circle-o me-1 col_pink font_8"></i>Sapta Ras <span class="pull-right">(05)</span></a></h6>
                             <hr>
-                            <h6 class="font_14 mb-0"><a href="blog_detail.aspx"><i class="fa fa-circle-o me-1 col_pink font_8"></i>Abstract drip art <span class="pull-right">(02)</span></a></h6>
+                            <h6 class="font_14 mb-0"><a href="Addproduct.aspx"><i class="fa fa-circle-o me-1 col_pink font_8"></i>Abstract drip art <span class="pull-right">(02)</span></a></h6>
                              <hr>
-                            <h6 class="font_14 mb-0"><a href="blog_detail.aspx"><i class="fa fa-circle-o me-1 col_pink font_8"></i>Dark Acrylic<span class="pull-right">(02)</span></a></h6>
+                            <h6 class="font_14 mb-0"><a href="Addproduct.aspx"><i class="fa fa-circle-o me-1 col_pink font_8"></i>Dark Acrylic<span class="pull-right">(02)</span></a></h6>
                              
                         </div>
                     </div>
@@ -157,107 +138,11 @@
                                         <h6 class="fw-normal mb-0"><strong>- Dapibus Diam </strong>of Google Inc.</h6>
                                     </blockquote>
                                     <p>It was popularised in the 1980s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including text are in so Ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation quis nostrud exercitation quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt iest laborum.</p>
-                                   <%-- <ul>
-                                        <li class="d-inline-block me-3"><a href="#"><i class="fa fa-tag me-1 col_pink"></i>Blog</a></li>
-                                        <li class="d-inline-block me-3"><a href="#"><i class="fa fa-tag me-1 col_pink"></i>Creative</a></li>
-                                        <li class="d-inline-block me-3"><a href="#"><i class="fa fa-tag me-1 col_pink"></i>Business</a></li>
-                                        <li class="d-inline-block"><a href="#"><i class="fa fa-tag me-1 col_pink"></i>News</a></li>
-                                    </ul>--%>
-                                    <%--<ul class="social-network social-circle mb-0 mt-3">
-                                        <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-skype"></i></a></li>
-                                        <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-instagram"></i></a></li>
-                                        <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-                                    </ul>--%>
+                                   
                                 </div>
                             </div>
-                        </div>
-                       <%-- <div class="blog_1dt3  mt-4">
-                            <div class="col-md-12">
-                                <h4>RECENT COMMENTS</h4>
-                            </div>
-                        </div>--%>
-                        <%--<div class="blog_1dt4  mt-4">--%>
-                            <%--<div class="blog_1dt4i row">--%>
-                                <%--<div class="col-md-1 col-1 pe-0">
-                                    <div class="blog_1dt4il">
-                                        <img src="img/51.jpg" class="w-100 rounded-circle" alt="abc">
-                                    </div>
-                                </div>--%>
-                                <%--<div class="col-md-11 col-11">
-                                    <div class="blog_1dt4ir">
-                                        <h5><a href="#">Mr Eget Nulla</a> <span class="font_14 col_light">/ 13 July 2017</span></h5>
-                                        <p class="font_14">
-                                            Hi, this is a comment.<br>
-                                            To delete a comment, just log in and view the post's comments. There you will have the option to edit or delete them.
-                                        </p>
-                                        <h6 class="font_14 mb-0 mt-3"><a class="button p-3 pt-2 pb-2" href="#">Reply</a></h6>
-                                    </div>
-                                </div>
-                            </div>--%>
-                            <hr>
-                            <%--<div class="blog_1dt4i row">
-                                <div class="col-md-1 pe-0 col-1">
-                                    <div class="blog_1dt4il">
-                                        <img src="img/52.jpg" class="w-100 rounded-circle" alt="abc">
-                                    </div>
-                                </div>
-                                <div class="col-md-11 col-11">
-                                    <div class="blog_1dt4ir">
-                                        <h5><a href="#">Mr Semp Porta</a> <span class="font_14 col_light">/ 13 July 2017</span></h5>
-                                        <p class="font_14">
-                                            Hi, this is a comment.<br>
-                                            To delete a comment, just log in and view the post's comments. There you will have the option to edit or delete them.
-                                        </p>
-                                        <h6 class="font_14 mb-0 mt-3"><a class="button p-3 pt-2 pb-2" href="#">Reply</a></h6>
-                                    </div>
-                                </div>
-                            </div>--%>
-                           <%-- <hr>
-                            <div class="blog_1dt4i row">
-                                <div class="col-md-1 pe-0 col-1">
-                                    <div class="blog_1dt4il">
-                                        <img src="img/53.jpg" class="w-100 rounded-circle" alt="abc">
-                                    </div>
-                                </div>
-                                <div class="col-md-11 col-11">
-                                    <div class="blog_1dt4ir">
-                                        <h5><a href="#">Mr Quis Sem</a> <span class="font_14 col_light">/ 13 July 2017</span></h5>
-                                        <p class="font_14">
-                                            Hi, this is a comment.<br>
-                                            To delete a comment, just log in and view the post's comments. There you will have the option to edit or delete them.
-                                        </p>
-                                        <h6 class="font_14 mb-0 mt-3"><a class="button p-3 pt-2 pb-2" href="#">Reply</a></h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="blog_1dt3  mt-4">
-                            <div class="c--%<%-->ol-md-12">
-                                <h4>GIVE A REPLY</h4>
-                            </div>
-                        </div>--%>
-                       <%-- <div class="blog_1dt5 row mt-3">
-                            <div class="col-md-6">
-                                <div class="blog_1dt5l">
-                                    <textarea placeholder="Comment" class="form-control form_text"></textarea>
-                                    <div class="form-check mt-3">
-                                        <input type="checkbox" class="form-check-input" id="customCheck1">
-                                        <label class="form-check-label" for="customCheck1">Save my name and email in this browser for the next time I comment.</label>
-                                    </div>
-                                    <h6 class="mt-3 mb-0 text-uppercase"><a class="button ps-4 pe-4 pt-3 pb-3" href="#">COMMENT</a></h6>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="blog_1dt5l">
-                                    <input class="form-control" placeholder="Name" type="text">
-                                    <input class="form-control mt-3" placeholder="Email" type="text">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>--%>
+                        </div>           
+                            <hr />
             </div>
         </div>
     </section>

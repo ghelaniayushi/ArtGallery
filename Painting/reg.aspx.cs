@@ -44,7 +44,7 @@ namespace Painting
 
         protected void btnClubLogin_Click1(object sender, EventArgs e)
         {
-            
+            Response.Redirect("Admin_Register.aspx");
         }
 
         protected void btnMemberLogin_Click1(object sender, EventArgs e)

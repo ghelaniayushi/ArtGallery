@@ -42,9 +42,14 @@ namespace Painting
         }
 
 
-        public void insertAdmin(string unm, string pass)
+        public void insertAdmin_tbl(string fnm, string email,string unm,string pass, string phno, string add)
         {
-            cmd = new SqlCommand($"insert into Admin_tbl([UserName],[Password]) Values ('{unm}','{pass}');", con);
+            cmd = new SqlCommand($"insert into Admin_tbl(FullName,Email,Username,Password,PhoneNumber,Address) Values ('{fnm}','{email}','{unm}','{pass}','{phno}','{add}');", con);
+            cmd.ExecuteNonQuery();
+        }
+        public void insertcategory_tbl(string catnm)
+        {
+            cmd = new SqlCommand($"insert into category_tbl(Category_Name)values('{catnm}')", con);
             cmd.ExecuteNonQuery();
         }
 

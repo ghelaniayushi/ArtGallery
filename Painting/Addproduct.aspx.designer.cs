@@ -8,9 +8,9 @@
 //------------------------------------------------------------------------------
 
 
-namespace Painting.Admin
+namespace Painting
 {
-    public partial class Admin
+    public partial class Addproduct
     {
     }
 }

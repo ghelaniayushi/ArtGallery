@@ -55,11 +55,7 @@
 
                 <asp:Label ID="lblRegisterMessage" runat="server" ForeColor="Red"></asp:Label>
 
-                <!-- Login Redirect -->
-                <div style="text-align: center; margin-top: 15px;">
-                    <span style="color: white;">Already have an account? </span>
-                    <a href="Login.aspx" style="color: #C22752; text-decoration: none; font-weight: bold;">Sign In</a>
-                </div>
+               
             </div>
         </div>
     </div>

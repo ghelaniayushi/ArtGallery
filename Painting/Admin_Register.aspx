@@ -8,7 +8,7 @@
 
             <!-- Left Image Section -->
             <div style="flex: 1; display: flex; justify-content: center; align-items: center;">
-                <img src="img/admin-register.jpg" alt="Admin Registration" style="width: 250px;">
+                <img src="img/signup-image.jpg" alt="Admin Registration" style="width: 250px;">
             </div>
 
             <!-- Right Registration Form Section -->
@@ -58,11 +58,7 @@
 
                 <asp:Label ID="lblAdminRegisterMessage" runat="server" ForeColor="Red"></asp:Label>
 
-                <!-- Admin Login Redirect -->
-                <div style="text-align: center; margin-top: 15px;">
-                    <span style="color: white;">Already an admin? </span>
-                    <a href="AdminLogin.aspx" style="color: #C22752; text-decoration: none; font-weight: bold;">Sign In</a>
-                </div>
+               
             </div>
         </div>
     </div>

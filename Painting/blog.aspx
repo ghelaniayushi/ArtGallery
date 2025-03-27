@@ -68,33 +68,33 @@
                         <div class="blog_1l1 bg_border p-3 mt-4">
                             <hr class="line_1 mt-0">
                             <h5 class="mb-4">CATEGORIES</h5>
-                            <h6 class="font_14"><a href="blog_detail.aspx"><i class="fa fa-circle-o me-1 col_pink font_8"></i>WaterColor <span class="pull-right">(03)</span> </a></h6>
+                            <h6 class="font_14"><a href="Category.aspx"><i class="fa fa-circle-o me-1 col_pink font_8"></i>WaterColor <span class="pull-right">(03)</span> </a></h6>
                             <hr>
-                            <h6 class="font_14"><a href="blog_detail.aspx"><i class="fa fa-circle-o me-1 col_pink font_8"></i>oil pastel<span class="pull-right">(08)</span></a></h6>
+                            <h6 class="font_14"><a href="Category.aspx"><i class="fa fa-circle-o me-1 col_pink font_8"></i>oil pastel<span class="pull-right">(08)</span></a></h6>
                             <hr>
                          
-                            <h6 class="font_14 mb-0"><a href="blog_detail.aspx"><i class="fa fa-circle-o me-1 col_pink font_8"></i>Acrylic <span class="pull-right">(04)</span></a></h6>
+                            <h6 class="font_14 mb-0"><a href="Category.aspx"><i class="fa fa-circle-o me-1 col_pink font_8"></i>Acrylic <span class="pull-right">(04)</span></a></h6>
                               
                         </div>
                        
                          <div class="blog_1l1 bg_border p-3 mt-4">
                             <hr class="line_1 mt-0">
                             <h5 class="mb-4">Types</h5>
-                            <h6 class="font_14"><a href="blog_detail.aspx"><i class="fa fa-circle-o me-1 col_pink font_8"></i>Animals <span class="pull-right">(15)</span> </a></h6>
+                            <h6 class="font_14"><a href="Addproduct.aspx"><i class="fa fa-circle-o me-1 col_pink font_8"></i>Animals <span class="pull-right">(15)</span> </a></h6>
                             <hr>
-                            <h6 class="font_14"><a href="blog_detail.aspx"><i class="fa fa-circle-o me-1 col_pink font_8"></i>Nature <span class="pull-right">(05)</span></a></h6>
+                            <h6 class="font_14"><a href="Addproduct.aspx"><i class="fa fa-circle-o me-1 col_pink font_8"></i>Nature <span class="pull-right">(05)</span></a></h6>
                             <hr>
-                            <h6 class="font_14"><a href="blog_detail.aspx"><i class="fa fa-circle-o me-1 col_pink font_8"></i>Flower <span class="pull-right">(07)</span></a></h6>
+                            <h6 class="font_14"><a href="Addproduct.aspx"><i class="fa fa-circle-o me-1 col_pink font_8"></i>Flower <span class="pull-right">(07)</span></a></h6>
                             <hr>
-                            <h6 class="font_14"><a href="blog_detail.aspx"><i class="fa fa-circle-o me-1 col_pink font_8"></i>Birds <span class="pull-right">(08)</span></a></h6>
+                            <h6 class="font_14"><a href="Addproduct.aspx"><i class="fa fa-circle-o me-1 col_pink font_8"></i>Birds <span class="pull-right">(08)</span></a></h6>
                             <hr>
-                            <h6 class="font_14"><a href="blog_detail.aspx"><i class="fa fa-circle-o me-1 col_pink font_8"></i>Sculpture <span class="pull-right">(04)</span></a></h6>
+                            <h6 class="font_14"><a href="Addproduct.aspx"><i class="fa fa-circle-o me-1 col_pink font_8"></i>Sculpture <span class="pull-right">(04)</span></a></h6>
                             <hr>
-                            <h6 class="font_14"><a href="blog_detail.aspx"><i class="fa fa-circle-o me-1 col_pink font_8"></i>Sapta Ras <span class="pull-right">(05)</span></a></h6>
+                            <h6 class="font_14"><a href="Addproduct.aspx"><i class="fa fa-circle-o me-1 col_pink font_8"></i>Sapta Ras <span class="pull-right">(05)</span></a></h6>
                             <hr>
-                            <h6 class="font_14 mb-0"><a href="blog_detail.aspx"><i class="fa fa-circle-o me-1 col_pink font_8"></i>Abstract drip art <span class="pull-right">(02)</span></a></h6>
+                            <h6 class="font_14 mb-0"><a href="Addproduct.aspx"><i class="fa fa-circle-o me-1 col_pink font_8"></i>Abstract drip art <span class="pull-right">(02)</span></a></h6>
                              <hr>
-                            <h6 class="font_14 mb-0"><a href="blog_detail.aspx"><i class="fa fa-circle-o me-1 col_pink font_8"></i>Dark Acrylic<span class="pull-right">(02)</span></a></h6>
+                            <h6 class="font_14 mb-0"><a href="Addproduct.aspx"><i class="fa fa-circle-o me-1 col_pink font_8"></i>Dark Acrylic<span class="pull-right">(02)</span></a></h6>
                              
                         </div>
                     </div>

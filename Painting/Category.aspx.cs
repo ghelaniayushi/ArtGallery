@@ -8,10 +8,9 @@ using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 
-
 namespace Painting
 {
-    public partial class Admin_Register : System.Web.UI.Page
+    public partial class Category : System.Web.UI.Page
     {
         Class1 cs = new Class1();
 
@@ -20,12 +19,11 @@ namespace Painting
             cs.startcon();
         }
 
-        protected void btnRegisterAdmin_Click(object sender, EventArgs e)
+        protected void btnsubmit_Click(object sender, EventArgs e)
         {
             Class1 cs = new Class1();
             cs.startcon();
-            cs.insertAdmin_tbl(txtFullName.Text,txtEmail.Text,txtUsername.Text,txtPassword.Text,txtPhoneNumber.Text,txtAddress.Text);
-
+            cs.insertcategory_tbl(txtCategoryName.Text);
         }
     }
 }

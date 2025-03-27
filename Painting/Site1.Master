@@ -42,13 +42,16 @@
                                     <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
                                         <li><a class="dropdown-item" href="product.aspx">Product</a></li>
                                         <li><a class="dropdown-item border-0" href="detail.aspx">Product Detail</a></li>
+                                        <li><a class="dropdown-item border-0" href="Addproduct.aspx">AddProduct</a></li>
                                         <% if (Session["UserEmail"]?.ToString() != null)
                                             { %>
                                         <li><a class="dropdown-item border-0" href="detail.aspx">Add To Cart</a></li>
                                         <%} %>
                                     </ul>
                                 </li>
-
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Category.aspx">Category</a>
+                                </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog
                                     </a>

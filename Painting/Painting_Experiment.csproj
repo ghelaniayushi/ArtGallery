@@ -67,12 +67,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Admin\Admin.aspx" />
+    <Content Include="Addproduct.aspx" />
     <Content Include="Admin_Login.aspx" />
     <Content Include="Admin_Register.aspx" />
+    <Content Include="Category.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="about.aspx" />
-    <Content Include="Admin\Add Product.aspx" />
     <Content Include="Admin\css\about.css" />
     <Content Include="Admin\css\blog.css" />
     <Content Include="Admin\css\bootstrap.min.css" />
@@ -286,12 +286,12 @@
     <Content Include="reg.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin\Admin.aspx.cs">
-      <DependentUpon>Admin.aspx</DependentUpon>
+    <Compile Include="Addproduct.aspx.cs">
+      <DependentUpon>Addproduct.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\Admin.aspx.designer.cs">
-      <DependentUpon>Admin.aspx</DependentUpon>
+    <Compile Include="Addproduct.aspx.designer.cs">
+      <DependentUpon>Addproduct.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin_Login.aspx.cs">
       <DependentUpon>Admin_Login.aspx</DependentUpon>
@@ -307,6 +307,13 @@
     <Compile Include="Admin_Register.aspx.designer.cs">
       <DependentUpon>Admin_Register.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Category.aspx.cs">
+      <DependentUpon>Category.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Category.aspx.designer.cs">
+      <DependentUpon>Category.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -320,13 +327,6 @@
     </Compile>
     <Compile Include="about.aspx.designer.cs">
       <DependentUpon>about.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\Add Product.aspx.cs">
-      <DependentUpon>Add Product.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\Add Product.aspx.designer.cs">
-      <DependentUpon>Add Product.aspx</DependentUpon>
     </Compile>
     <Compile Include="blog_detail.aspx.cs">
       <DependentUpon>blog_detail.aspx</DependentUpon>
