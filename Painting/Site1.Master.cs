@@ -13,5 +13,11 @@ namespace Painting
         {
 
         }
+
+        protected void Unnamed1_Click(object sender, EventArgs e)
+        {
+            Session.Abandon();
+            Session.Clear();
+        }
     }
 }

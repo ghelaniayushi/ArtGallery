@@ -15,87 +15,7 @@
     <link href="css/index.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&display=swap" rel="stylesheet">
     <script src="js/bootstrap.bundle.min.js"></script>
-    <div class="main clearfix position-relative">
-        <div class="main_1 clearfix position-absolute top-0 w-100">
-            <section id="header">
-                <nav class="navbar navbar-expand-md navbar-light" id="navbar_sticky">
-                    <div class="container-xl">
-                        <a class="navbar-brand fs-2 p-0 fw-bold text-white" href="index.html"><i class="fa fa-pencil col_pink me-1 align-middle"></i>art <span class="col_pink span_1">WEB</span>
-                            <br>
-                            <span class="font_12 span_2">DIGITAL ART</span></a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav mb-0 ms-auto">
 
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="Home.aspx">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="about.aspx">About </a>
-                                </li>
-
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Product
-                                    </a>
-                                    <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" href="product.aspx">Product</a></li>
-                                        <li><a class="dropdown-item border-0" href="detail.aspx">Product Detail</a></li>
-                                        <li><a class="dropdown-item border-0" href="Addproduct.aspx">AddProduct</a></li>
-                                        <% if (Session["UserEmail"]?.ToString() != null)
-                                            { %>
-                                        <li><a class="dropdown-item border-0" href="detail.aspx">Add To Cart</a></li>
-                                        <%} %>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="Category.aspx">Category</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog
-                                    </a>
-                                    <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" href="blog.aspx">Blog</a></li>
-                                        <li><a class="dropdown-item border-0" href="blog_detail.aspx">Blog Detail</a></li>
-                                    </ul>
-                                </li>
-
-                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages
-                                    </a>
-                                     <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" href="cart.aspx">Shopping cart</a></li>
-                                        <li><a class="dropdown-item border-0" href="checkout.aspx">Checkout</a></li>
-                                    </ul>
-                                </li>
-
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="contact.aspx">Contact</a>
-                                </li>
-                                <% if (Session["UserEmail"]?.ToString() == null)
-                                    { %>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="reg.aspx">Registration</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="Login.aspx">Login</a>
-                                </li>
-                                <%}
-                                    else
-                                    { %>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="Home.aspx">Logout</a>
-                                </li>
-                                <%} %>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </section>
-        </div>
-    </div>
 
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -103,7 +23,110 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <div class="main clearfix position-relative">
+                <div class="main_1 clearfix position-absolute top-0 w-100">
+                    <section id="header">
+                        <nav class="navbar navbar-expand-md navbar-light" id="navbar_sticky">
+                            <div class="container-xl">
+                                <a class="navbar-brand fs-2 p-0 fw-bold text-white" href="index.html"><i class="fa fa-pencil col_pink me-1 align-middle"></i>art <span class="col_pink span_1">WEB</span>
+                                    <br>
+                                    <span class="font_12 span_2">DIGITAL ART</span></a>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav mb-0 ms-auto">
 
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="Home.aspx">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="about.aspx">About </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="product.aspx">Product </a>
+                                        </li>
+                                        <%--drop dwon for blog and blogdetail page--%>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog
+                                            </a>
+                                            <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
+                                                <li><a class="dropdown-item" href="blog.aspx">Blog</a></li>
+                                                <%if (Session["User"]?.ToString() != null)
+                                                    { %>
+                                                <li><a class="dropdown-item border-0" href="<%= ResolveUrl("~/User/blog_detail.aspx") %>">Blog Detail</a></li>
+
+                                                <%} %>
+                                            </ul>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="contact.aspx">Contact</a>
+                                        </li>
+
+
+                                        <% if ((Session["User"]?.ToString() == null) && (Session["Admin"]?.ToString() == null))
+                                            { %>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="reg.aspx">Registration</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="Login.aspx">Login</a>
+                                        </li>
+                                        <%}
+                                            else
+                                            { %>
+                                        <li class="nav-item">
+                                            <asp:LinkButton class="nav-link" runat="server" OnClick="Unnamed1_Click">Logout</asp:LinkButton>
+                                            <%-- <a class="nav-link" href="Home.aspx">Logout</a>--%>
+                                        </li>
+                                        <%} %>
+
+                                        <% if (Session["User"]?.ToString() != null)
+                                            { %>
+                                        <%--drop dwon for product ,product detail,add to cart page--%>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Product
+                                            </a>
+                                            <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
+                                                <%} %>
+                                                <li><a class="dropdown-item" href="product.aspx">Product</a></li>
+                                                <% if (Session["User"]?.ToString() != null)
+                                                    {%>
+                                                <li><a class="dropdown-item border-0" href="<%= ResolveUrl("~/User/detail.aspx") %>">Product Detail</a></li>
+                                                <li><a class="dropdown-item border-0" href="<%= ResolveUrl("~/User/cart.aspx") %>">Add To Cart</a></li>
+
+
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages
+                                            </a>
+                                            <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
+                                                <li><a class="dropdown-item" href="<%= ResolveUrl("~/User/cart.aspx") %>">Shopping cart</a></li>
+                                                <li><a class="dropdown-item border-0" href="<%= ResolveUrl("~/User/cart.aspx") %>">Checkout</a></li>
+
+                                            </ul>
+                                        </li>
+                                        <%} %>
+                                        <%if (Session["Admin"]?.ToString() != null)
+                                            {%>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="<%= ResolveUrl("~/Admin/Category.aspx") %>">Category</a>
+                                        </li>
+
+                                        <li><a class="dropdown-item border-0" href="<%= ResolveUrl("~/Admin/Addproduct.aspx") %>">AddProduct</a></li>
+                                        <li><a class="dropdown-item border-0" href="Edit_user.aspx">Manage User</a></li>
+                                        <li><a class="dropdown-item border-0" href="<%= ResolveUrl("~/Admin/Admin_Register.aspx") %>">Add Admin</a></li>
+
+                                        <%} %>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </section>
+                </div>
+            </div>
 
 
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">

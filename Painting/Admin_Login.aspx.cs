@@ -12,36 +12,42 @@ namespace Painting
 {
     public partial class Admin_Login : System.Web.UI.Page
     {
-       
-        Class1 cs;
+        SqlCommand cmd;
+        Class1 cs = new Class1();
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            getcon();
-        }
-        void getcon()
-        {
-            cs = new Class1();
             cs.startcon();
         }
+        
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-            getcon();
-            string UserName = txtunm.Text;
-            string Password = txtpwd.Text;
+            cs.startcon();
+            cmd = new SqlCommand($"Select Count(*) From Admin_tbl Where Username='{txtunm.Text}' and Password='{txtpwd.Text}';", cs.startcon());
+            int i = Convert.ToInt32(cmd.ExecuteScalar());
 
-            
-            if (UserName == "ayushi" && Password == "1234")
+            if(i>0)
             {
-                lblMessage.Text = "login succesfully";
+                Session["Admin"] = txtunm.Text;
                 Response.Redirect("Home.aspx");
             }
-            else
-            {
-                lblMessage.Text = "Invalid username or password";
+            //getcon();
+            //string UserName = txtunm.Text;
+            //string Password = txtpwd.Text;
+
+            
+            //if (UserName == "ayushi" && Password == "1234")
+            //{
                 
-            }
+            //    lblMessage.Text = "login succesfully";
+            //    Response.Redirect("Home.aspx");
+            //}
+            //else
+            //{
+            //    lblMessage.Text = "Invalid username or password";
+                
+            //}
         }
     }
 }

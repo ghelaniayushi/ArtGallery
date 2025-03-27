@@ -67,84 +67,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Addproduct.aspx" />
+    <Content Include="Admin\Addproduct.aspx" />
     <Content Include="Admin_Login.aspx" />
-    <Content Include="Admin_Register.aspx" />
-    <Content Include="Category.aspx" />
+    <Content Include="Admin\Admin_Register.aspx" />
+    <Content Include="Admin\Category.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="about.aspx" />
-    <Content Include="Admin\css\about.css" />
-    <Content Include="Admin\css\blog.css" />
-    <Content Include="Admin\css\bootstrap.min.css" />
-    <Content Include="Admin\css\cart.css" />
-    <Content Include="Admin\css\checkout.css" />
-    <Content Include="Admin\css\font-awesome.min.css" />
-    <Content Include="Admin\css\global.css" />
-    <Content Include="Admin\css\index.css" />
-    <Content Include="Admin\css\product.css" />
-    <Content Include="Admin\fonts\fontawesome-webfont.svg" />
-    <Content Include="Admin\img\1.jpg" />
-    <Content Include="Admin\img\10.jpg" />
-    <Content Include="Admin\img\11.jpg" />
-    <Content Include="Admin\img\12.jpg" />
-    <Content Include="Admin\img\13.jpg" />
-    <Content Include="Admin\img\14.jpg" />
-    <Content Include="Admin\img\15.jpg" />
-    <Content Include="Admin\img\16.jpg" />
-    <Content Include="Admin\img\17.jpg" />
-    <Content Include="Admin\img\18.jpg" />
-    <Content Include="Admin\img\2.jpg" />
-    <Content Include="Admin\img\20.jpg" />
-    <Content Include="Admin\img\21.jpg" />
-    <Content Include="Admin\img\22.jpg" />
-    <Content Include="Admin\img\23.jpg" />
-    <Content Include="Admin\img\24.jpg" />
-    <Content Include="Admin\img\25.jpg" />
-    <Content Include="Admin\img\26.jpg" />
-    <Content Include="Admin\img\27.jpg" />
-    <Content Include="Admin\img\28.jpg" />
-    <Content Include="Admin\img\29.jpg" />
-    <Content Include="Admin\img\3.jpg" />
-    <Content Include="Admin\img\30.jpg" />
-    <Content Include="Admin\img\31.jpg" />
-    <Content Include="Admin\img\32.jpg" />
-    <Content Include="Admin\img\33.jpg" />
-    <Content Include="Admin\img\34.jpg" />
-    <Content Include="Admin\img\35.jpg" />
-    <Content Include="Admin\img\36.jpg" />
-    <Content Include="Admin\img\37.jpg" />
-    <Content Include="Admin\img\38.jpg" />
-    <Content Include="Admin\img\39.jpg" />
-    <Content Include="Admin\img\4.jpg" />
-    <Content Include="Admin\img\40.jpg" />
-    <Content Include="Admin\img\41.jpg" />
-    <Content Include="Admin\img\42.jpg" />
-    <Content Include="Admin\img\43.jpg" />
-    <Content Include="Admin\img\44.jpg" />
-    <Content Include="Admin\img\45.jpg" />
-    <Content Include="Admin\img\46.jpg" />
-    <Content Include="Admin\img\47.jpg" />
-    <Content Include="Admin\img\48.jpg" />
-    <Content Include="Admin\img\49.jpg" />
-    <Content Include="Admin\img\5.jpg" />
-    <Content Include="Admin\img\50.jpg" />
-    <Content Include="Admin\img\51.jpg" />
-    <Content Include="Admin\img\52.jpg" />
-    <Content Include="Admin\img\53.jpg" />
-    <Content Include="Admin\img\54.jpg" />
-    <Content Include="Admin\img\6.jpg" />
-    <Content Include="Admin\img\7.jpg" />
-    <Content Include="Admin\img\8.jpg" />
-    <Content Include="Admin\img\9.jpg" />
-    <Content Include="Admin\js\bootstrap.bundle.min.js" />
     <Content Include="App_Data\Art_db.mdf" />
     <Content Include="App_Data\Art_db_log.ldf">
       <DependentUpon>Art_db.mdf</DependentUpon>
     </Content>
-    <Content Include="blog_detail.aspx" />
+    <Content Include="User\blog_detail.aspx" />
     <Content Include="blog.aspx" />
-    <Content Include="cart.aspx" />
-    <Content Include="checkout.aspx" />
+    <Content Include="User\cart.aspx" />
+    <Content Include="User\checkout.aspx" />
     <Content Include="contact.aspx" />
     <Content Include="css\about.css" />
     <Content Include="css\blog.css" />
@@ -155,7 +91,7 @@
     <Content Include="css\global.css" />
     <Content Include="css\index.css" />
     <Content Include="css\product.css" />
-    <Content Include="detail.aspx" />
+    <Content Include="User\detail.aspx" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="img\1.jpg" />
     <Content Include="img\10.jpg" />
@@ -215,70 +151,6 @@
     <Content Include="js\bootstrap.bundle.min.js" />
     <Content Include="Login.aspx" />
     <Content Include="product.aspx" />
-    <Content Include="User\css\about.css" />
-    <Content Include="User\css\blog.css" />
-    <Content Include="User\css\bootstrap.min.css" />
-    <Content Include="User\css\cart.css" />
-    <Content Include="User\css\checkout.css" />
-    <Content Include="User\css\font-awesome.min.css" />
-    <Content Include="User\css\global.css" />
-    <Content Include="User\css\index.css" />
-    <Content Include="User\css\product.css" />
-    <Content Include="User\fonts\fontawesome-webfont.svg" />
-    <Content Include="User\img\1.jpg" />
-    <Content Include="User\img\10.jpg" />
-    <Content Include="User\img\11.jpg" />
-    <Content Include="User\img\12.jpg" />
-    <Content Include="User\img\13.jpg" />
-    <Content Include="User\img\14.jpg" />
-    <Content Include="User\img\15.jpg" />
-    <Content Include="User\img\16.jpg" />
-    <Content Include="User\img\17.jpg" />
-    <Content Include="User\img\18.jpg" />
-    <Content Include="User\img\2.jpg" />
-    <Content Include="User\img\20.jpg" />
-    <Content Include="User\img\21.jpg" />
-    <Content Include="User\img\22.jpg" />
-    <Content Include="User\img\23.jpg" />
-    <Content Include="User\img\24.jpg" />
-    <Content Include="User\img\25.jpg" />
-    <Content Include="User\img\26.jpg" />
-    <Content Include="User\img\27.jpg" />
-    <Content Include="User\img\28.jpg" />
-    <Content Include="User\img\29.jpg" />
-    <Content Include="User\img\3.jpg" />
-    <Content Include="User\img\30.jpg" />
-    <Content Include="User\img\31.jpg" />
-    <Content Include="User\img\32.jpg" />
-    <Content Include="User\img\33.jpg" />
-    <Content Include="User\img\34.jpg" />
-    <Content Include="User\img\35.jpg" />
-    <Content Include="User\img\36.jpg" />
-    <Content Include="User\img\37.jpg" />
-    <Content Include="User\img\38.jpg" />
-    <Content Include="User\img\39.jpg" />
-    <Content Include="User\img\4.jpg" />
-    <Content Include="User\img\40.jpg" />
-    <Content Include="User\img\41.jpg" />
-    <Content Include="User\img\42.jpg" />
-    <Content Include="User\img\43.jpg" />
-    <Content Include="User\img\44.jpg" />
-    <Content Include="User\img\45.jpg" />
-    <Content Include="User\img\46.jpg" />
-    <Content Include="User\img\47.jpg" />
-    <Content Include="User\img\48.jpg" />
-    <Content Include="User\img\49.jpg" />
-    <Content Include="User\img\5.jpg" />
-    <Content Include="User\img\50.jpg" />
-    <Content Include="User\img\51.jpg" />
-    <Content Include="User\img\52.jpg" />
-    <Content Include="User\img\53.jpg" />
-    <Content Include="User\img\54.jpg" />
-    <Content Include="User\img\6.jpg" />
-    <Content Include="User\img\7.jpg" />
-    <Content Include="User\img\8.jpg" />
-    <Content Include="User\img\9.jpg" />
-    <Content Include="User\js\bootstrap.bundle.min.js" />
     <Content Include="User\User_Home.aspx" />
     <Content Include="User_Login.aspx" />
     <Content Include="User_Register.aspx" />
@@ -286,11 +158,11 @@
     <Content Include="reg.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Addproduct.aspx.cs">
+    <Compile Include="Admin\Addproduct.aspx.cs">
       <DependentUpon>Addproduct.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Addproduct.aspx.designer.cs">
+    <Compile Include="Admin\Addproduct.aspx.designer.cs">
       <DependentUpon>Addproduct.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin_Login.aspx.cs">
@@ -300,18 +172,18 @@
     <Compile Include="Admin_Login.aspx.designer.cs">
       <DependentUpon>Admin_Login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin_Register.aspx.cs">
+    <Compile Include="Admin\Admin_Register.aspx.cs">
       <DependentUpon>Admin_Register.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin_Register.aspx.designer.cs">
+    <Compile Include="Admin\Admin_Register.aspx.designer.cs">
       <DependentUpon>Admin_Register.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Category.aspx.cs">
+    <Compile Include="Admin\Category.aspx.cs">
       <DependentUpon>Category.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Category.aspx.designer.cs">
+    <Compile Include="Admin\Category.aspx.designer.cs">
       <DependentUpon>Category.aspx</DependentUpon>
     </Compile>
     <Compile Include="Home.aspx.cs">
@@ -328,11 +200,11 @@
     <Compile Include="about.aspx.designer.cs">
       <DependentUpon>about.aspx</DependentUpon>
     </Compile>
-    <Compile Include="blog_detail.aspx.cs">
+    <Compile Include="User\blog_detail.aspx.cs">
       <DependentUpon>blog_detail.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="blog_detail.aspx.designer.cs">
+    <Compile Include="User\blog_detail.aspx.designer.cs">
       <DependentUpon>blog_detail.aspx</DependentUpon>
     </Compile>
     <Compile Include="blog.aspx.cs">
@@ -342,18 +214,18 @@
     <Compile Include="blog.aspx.designer.cs">
       <DependentUpon>blog.aspx</DependentUpon>
     </Compile>
-    <Compile Include="cart.aspx.cs">
+    <Compile Include="User\cart.aspx.cs">
       <DependentUpon>cart.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="cart.aspx.designer.cs">
+    <Compile Include="User\cart.aspx.designer.cs">
       <DependentUpon>cart.aspx</DependentUpon>
     </Compile>
-    <Compile Include="checkout.aspx.cs">
+    <Compile Include="User\checkout.aspx.cs">
       <DependentUpon>checkout.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="checkout.aspx.designer.cs">
+    <Compile Include="User\checkout.aspx.designer.cs">
       <DependentUpon>checkout.aspx</DependentUpon>
     </Compile>
     <Compile Include="Class1.cs" />
@@ -364,11 +236,11 @@
     <Compile Include="contact.aspx.designer.cs">
       <DependentUpon>contact.aspx</DependentUpon>
     </Compile>
-    <Compile Include="detail.aspx.cs">
+    <Compile Include="User\detail.aspx.cs">
       <DependentUpon>detail.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="detail.aspx.designer.cs">
+    <Compile Include="User\detail.aspx.designer.cs">
       <DependentUpon>detail.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
@@ -430,22 +302,8 @@
     <Content Include="fonts\FontAwesome.otf" />
     <Content Include="fonts\OpenSans-Regular.ttf" />
     <Content Include="img\img.zip" />
-    <Content Include="Admin\fonts\fontawesome-webfont.eot" />
-    <Content Include="Admin\fonts\fontawesome-webfont.ttf" />
-    <Content Include="Admin\fonts\fontawesome-webfont.woff" />
-    <Content Include="Admin\fonts\fontawesome-webfont.woff2" />
-    <Content Include="Admin\fonts\FontAwesome.otf" />
-    <Content Include="Admin\fonts\OpenSans-Regular.ttf" />
-    <Content Include="Admin\img\img.zip" />
     <None Include="packages.config" />
     <Content Include="Site1.Master" />
-    <Content Include="User\fonts\fontawesome-webfont.eot" />
-    <Content Include="User\fonts\fontawesome-webfont.ttf" />
-    <Content Include="User\fonts\fontawesome-webfont.woff" />
-    <Content Include="User\fonts\fontawesome-webfont.woff2" />
-    <Content Include="User\fonts\FontAwesome.otf" />
-    <Content Include="User\fonts\OpenSans-Regular.ttf" />
-    <Content Include="User\img\img.zip" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -14,16 +14,13 @@ namespace Painting
     public partial class User_Login : System.Web.UI.Page
     {
        
-        Class1 cs;
+        Class1 cs=new Class1();
+        SqlCommand cmd;
         protected void Page_Load(object sender, EventArgs e)
         {
-            getcon();
-        }
-        void getcon()
-        {
-            cs = new Class1();
             cs.startcon();
         }
+        
 
         //protected void btnLogin_Click(object sender, EventArgs e)
         //{
@@ -32,20 +29,31 @@ namespace Painting
 
         protected void btnLogin_Click1(object sender, EventArgs e)
         {
-            string username = txtunm.Text;
-            string password = txtpass.Text;
 
+            cs.startcon();
+            cmd = new SqlCommand($"Select Count(*) from Users Where Username='{txtunm.Text}' and Password='{txtpass.Text}';", cs.startcon());
+            int i = Convert.ToInt32(cmd.ExecuteScalar());
 
-            if (username == "ayushi" && password == "1234")
+            if (i > 0)
             {
-
+                Session["User"] = txtunm.Text;
+                Response.Write("User Login Sucessfully....!");
                 Response.Redirect("Home.aspx");
             }
-            else
-            {
-                lblMessage.Text = "Invalid username or password";
+            //string username = txtunm.Text;
+            //string password = txtpass.Text;
 
-            }
+
+            //if (username == "ayushi" && password == "1234")
+            //{
+
+            //    Response.Redirect("Home.aspx");
+            //}
+            //else
+            //{
+            //    lblMessage.Text = "Invalid username or password";
+
+            //}
         }
         //protected void btnLogin_Click(object sender, EventArgs e)
         //{
