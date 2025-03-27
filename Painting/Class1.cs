@@ -53,6 +53,47 @@ namespace Painting
             cmd.ExecuteNonQuery();
         }
 
+        public DataSet SelectCategory()
+        {
+            da = new SqlDataAdapter("Select * from Category_tbl ", con);
+            ds = new DataSet();
+            da.Fill(ds);
+            return ds;
+        }
+        public int InsertProduct(string p_name, string desc, string p_type,decimal price, int c_id, string image)
+        {
+            startcon();
+            cmd = new SqlCommand($"INSERT INTO Pro_tbl (Product_Name,Product_Description,Product_Type,Product_Price,Category_id,Product_Image) VALUES ('{p_name}', '{desc}', '{p_type}','{price}','{c_id}', '{image}');", con);
+            return cmd.ExecuteNonQuery();
+        }
+        public DataSet SelectProduct(int p_id)
+        {
+            startcon();
+            da = new SqlDataAdapter($"Select Product_name,Product_Description,Product_Type,Product_Price,Category_id from Pro_tbl where Product_Id='{p_id}'", con);
+            ds = new DataSet();
+            da.Fill(ds);
+            return ds;
+        }
+        public DataSet SelectProduct()
+        {
+            da = new SqlDataAdapter($"Select * from Pro_tbl", con);
+            ds = new DataSet();
+            da.Fill(ds);
+            return ds;
+        }
+        public int updateProduct(int p_id, string p_name, string desc, string p_type,decimal price, int c_id)
+        {
+            startcon();
+            cmd = new SqlCommand($"update Pro_tbl set Product_Name='{p_name}', Product_Description='{desc}', Product_Type='{p_type}',Product_Price='{price}', Category_id='{c_id}' where Product_Id='{p_id}';", con);
+
+            return cmd.ExecuteNonQuery();
+        }
+        public void DeleteProduct(int p_id)
+        {
+            startcon();
+            cmd = new SqlCommand($"Delete From Pro_tbl where Product_Id='{p_id}';", con);
+            cmd.ExecuteNonQuery();
+        }
         public void insertUser(string Fnm, string Email,string Unm,string pass,string phn,string add)
         {
             cmd = new SqlCommand($"insert into Users (FullName,Email,Username,Password,PhoneNumber,Address)Values('{Fnm}','{Email}','{Unm}','{pass}','{phn}','{add}')", con);
