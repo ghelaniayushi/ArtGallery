@@ -26,18 +26,7 @@
                         Style="width: 100%; padding: 12px; border: none; border-radius: 8px; background: #3A3335; color: white; outline: none;"></asp:TextBox>
                 </div>
 
-                <!-- Remember Me & Forgot Password -->
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
-                    <div>
-                        <asp:CheckBox ID="chkRememberMe" runat="server" />
-                        <label for="chkRememberMe" style="color: #EAEAEA;">Remember me</label>
-                    </div>
-                    <div>
-                        <a href="ForgotPassword.aspx" style="color: #C22752; text-decoration: none;">Forgot Password?</a>
-                    </div>
-                </div>
-
-                <!-- Login Button -->
+               
                 <asp:Button ID="btnLogin" runat="server" Text="Log in"
                     Style="width: 100%; padding: 12px; background: #C22752; color: white; border: none; border-radius: 8px; cursor: pointer; font-size: 16px; transition: 0.3s;"
                     onmouseover="this.style.background='#A11D44';" onmouseout="this.style.background='#C22752';" OnClick="btnLogin_Click" />

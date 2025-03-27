@@ -17,10 +17,16 @@ namespace Painting
         SqlDataAdapter da;
         DataSet ds;
 
-        public void startcon()
+        //public void startcon()
+        //{
+        //    con = new SqlConnection(s);
+        //    con.Open();
+        //}
+        public SqlConnection startcon()
         {
             con = new SqlConnection(s);
             con.Open();
+            return con;
         }
         public void insertContact(string nm,string email,string phn,string add)
         {
