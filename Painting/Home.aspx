@@ -1,144 +1,60 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="Painting.Home" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-</asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/global.css" rel="stylesheet">
-    <link href="css/index.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&display=swap" rel="stylesheet">
-    <script src="js/bootstrap.bundle.min.js"></script>
+<asp:Content ID="Content1" runat="server" ContentPlaceHolderID="ContentPlaceHolder1">
 
-    </head>
-    <body>
-        <div class="main clearfix position-relative">
-            <div class="main_1 clearfix position-absolute top-0 w-100">
-                <section id="header">
-                    <nav class="navbar navbar-expand-md navbar-light" id="navbar_sticky">
-                        <div class="container-xl">
-                            <a class="navbar-brand fs-2 p-0 fw-bold text-white" href="index.html"><i class="fa fa-pencil col_pink me-1 align-middle"></i>art <span class="col_pink span_1">WEB</span>
-                                <br>
-                                <span class="font_12 span_2">DIGITAL ART</span></a>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav mb-0 ms-auto">
 
-                                    <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="Home.aspx">Home</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="about.aspx">About </a>
-                                    </li>
+    <div class="main_2 clearfix">
+        <section id="center" class="center_home">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2" class="" aria-current="true"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-md-block">
+                            <h1 class="text-white font_60">Red Beauty Nature</h1>
+                            <h4 class="text-white mt-3">Photography</h4>
+                            <p class="text-white mt-4">The beauty of a woman is not in a facial mode but the true beauty in a woman is reflected in her soul. It is the caring that she lovingly gives the passion that she shows. The beauty of a woman grows with the passing years.</p>
+                            <h6 class="mt-4 mb-0"><a class="button" href="#"><i class="fa fa-bullhorn bg-white col_pink p-3"></i><span class="ps-3 pe-3">Back to overview</span></a></h6>
 
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Product
-                                        </a>
-                                        <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
-                                            <li><a class="dropdown-item" href="product.aspx">Product</a></li>
-                                            <li><a class="dropdown-item border-0" href="detail.aspx">Product Detail</a></li>
-                                             <li><a class="dropdown-item border-0" href="Add Product.aspx">Add Product</a></li>
-                                        </ul>
-                                    </li>
-
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog
-                                        </a>
-                                        <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
-                                            <li><a class="dropdown-item" href="blog.aspx">Blog</a></li>
-                                            <li><a class="dropdown-item border-0" href="blog_detail.aspx">Blog Detail</a></li>
-                                        </ul>
-                                    </li>
-
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages
-                                        </a>
-                                        <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
-                                            <li><a class="dropdown-item" href="cart.aspx">Shopping Cart</a></li>
-                                            <li><a class="dropdown-item border-0" href="checkout.aspx">Checkout</a></li>
-                                        </ul>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="contact.aspx">Contact</a>
-                                    </li>
-
-                                </ul>
-                            </div>
                         </div>
-                    </nav>
-                </section>
-
-            </div>
-            <div class="main_2 clearfix">
-                <section id="center" class="center_home">
-                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2" class="" aria-current="true"></button>
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="img/1.jpg" class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-md-block">
-                                    <h1 class="text-white font_60">Red Beauty Nature</h1>
-                                    <h4 class="text-white mt-3">Photography</h4>
-                                    <p class="text-white mt-4">The beauty of a woman is not in a facial mode but the true beauty in a woman is reflected in her soul. It is the caring that she lovingly gives the passion that she shows. The beauty of a woman grows with the passing years.</p>
-                                    <h6 class="mt-4 mb-0"><a class="button" href="#"><i class="fa fa-bullhorn bg-white col_pink p-3"></i>
-                                        <span class="ps-3 pe-3">Back to overview</span>
-                                       
-                                    </a></h6>
-
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/1.jpg" class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-md-block">
-                                    <h1 class="text-white font_60">Other Type Painting</h1>
-                                    <h4 class="text-white mt-3">Photography</h4>
-                                    <p class="text-white mt-4">The beauty of a woman is not in a facial mode but the true beauty in a woman is reflected in her soul. It is the caring that she lovingly gives the passion that she shows. The beauty of a woman grows with the passing years.</p>
-                                    <h6 class="mt-4 mb-0"><a class="button" href="#"><i class="fa fa-bullhorn bg-white col_pink p-3"></i><span class="ps-3 pe-3">Back to overview</span></a></h6>
-
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/1.jpg" class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-md-block">
-                                    <h1 class="text-white font_60">Trending Art Picture</h1>
-                                    <h4 class="text-white mt-3">Photography</h4>
-                                    <p class="text-white mt-4">The beauty of a woman is not in a facial mode but the true beauty in a woman is reflected in her soul. It is the caring that she lovingly gives the passion that she shows. The beauty of a woman grows with the passing years.</p>
-                                    <h6 class="mt-4 mb-0"><a class="button" href="#"><i class="fa fa-bullhorn bg-white col_pink p-3"></i>
-                                        <span class="ps-3 pe-3">Back to overview</span>
-                                        
-
-                                    </a></h6>
-
-                                </div>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
                     </div>
-                </section>
-            </div>
+                    <div class="carousel-item">
+                        <img src="img/1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-md-block">
+                            <h1 class="text-white font_60">Other Type Painting</h1>
+                            <h4 class="text-white mt-3">Photography</h4>
+                            <p class="text-white mt-4">The beauty of a woman is not in a facial mode but the true beauty in a woman is reflected in her soul. It is the caring that she lovingly gives the passion that she shows. The beauty of a woman grows with the passing years.</p>
+                            <h6 class="mt-4 mb-0"><a class="button" href="#"><i class="fa fa-bullhorn bg-white col_pink p-3"></i><span class="ps-3 pe-3">Back to overview</span></a></h6>
 
-        </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-md-block">
+                            <h1 class="text-white font_60">Trending Art Picture</h1>
+                            <h4 class="text-white mt-3">Photography</h4>
+                            <p class="text-white mt-4">The beauty of a woman is not in a facial mode but the true beauty in a woman is reflected in her soul. It is the caring that she lovingly gives the passion that she shows. The beauty of a woman grows with the passing years.</p>
+                            <h6 class="mt-4 mb-0"><a class="button" href="#"><i class="fa fa-bullhorn bg-white col_pink p-3"></i><span class="ps-3 pe-3">Back to overview</span></a></h6>
+
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
     </div>
-</asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
+
     <section id="port" class="p_4">
         <div class="container-xl">
             <div class="row port_1 text-center">
@@ -153,33 +69,27 @@
                     <ul class="nav nav-tabs justify-content-center border-0 mb-0">
                         <li class="nav-item">
                             <a href="#home" data-bs-toggle="tab" aria-expanded="false" class="nav-link active">
-                                <%--<span class="d-md-block">All</span>--%>
-                                <asp:Button ID="Button9" class="d-md-block" runat="server" Text="All" />
+                                <span class="d-md-block">All</span>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="#profile" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
-                                <%--<span class="d-md-block">Nature</span>--%>
-                                <asp:Button ID="Button10" class="d-md-block" runat="server" Text="Nature" />
+                                <span class="d-md-block">Nature</span>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="#settings" data-bs-toggle="tab" aria-expanded="false" class="nav-link">
-                                <%-- <span class="d-md-block">People</span>--%>
-                                <asp:Button ID="Button6" class="d-md-block" runat="server" Text="Animals" />
-
+                                <span class="d-md-block">People</span>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="#settings_o" data-bs-toggle="tab" aria-expanded="false" class="nav-link">
-                                <%--<span class="d-md-block">Still Life</span>--%>
-                                <asp:Button ID="Button7" class="d-md-block" runat="server" Text="Birds" />
+                                <span class="d-md-block">Still Life</span>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="#profile_o" data-bs-toggle="tab" aria-expanded="false" class="nav-link">
-                                <%--<span class="d-md-block">Street</span>--%>
-                                <asp:Button ID="Button8" class="d-md-block"  runat="server" Text="Flower" />
+                                <span class="d-md-block">Street</span>
                             </a>
                         </li>
                     </ul>
@@ -1344,11 +1254,7 @@
                     <div class="bloh_h1r text-center">
                         <h1 class="font_50">ACRYLIC</h1>
                         <p class="mt-3"><span class="fw-bold">Acrylic painting</span>, technique in which pigments are mixed with hot, liquid wax. After all of the colours have been applied to the painting surface, a heating element is passed over them until the individual brush or spatula marks fuse into a uniform film.</p>
-                        <h6 class="mt-4 mb-0"><%--<a class="button" href="#">--%>
-                            <i class="fa fa-bullhorn bg-white col_pink p-3"></i><%--<span class="ps-3 pe-3">VIEW GALLERY</span>--%>
-                            <asp:Button ID="Button12" runat="server" class="fa fa-bullhorn bg-white col_pink p-3" Text="VIEW GALLERY" />
-                                              </h6>
-                        
+                        <h6 class="mt-4 mb-0"><a class="button" href="#"><i class="fa fa-bullhorn bg-white col_pink p-3"></i><span class="ps-3 pe-3">VIEW GALLERY</span></a></h6>
                     </div>
                 </div>
             </div>
@@ -1357,9 +1263,7 @@
                     <div class="bloh_h1r text-center">
                         <h1 class="font_50">ENCAUSTIC</h1>
                         <p class="mt-3"><span class="fw-bold">Other painting</span>, technique in which pigments are mixed with hot, liquid wax. After all of the colours have been applied to the painting surface, a heating element is passed over them until the individual brush or spatula marks fuse into a uniform film.</p>
-                        <h6 class="mt-4 mb-0"><a class="button" href="#"><i class="fa fa-bullhorn bg-white col_pink p-3"></i><%--<span class="ps-3 pe-3">VIEW GALLERY</span>--%>
-                            <asp:Button ID="Button13" runat="server" class="ps-3 pe-3" Text="VIEW GALLERY" />
-                                              </a></h6>
+                        <h6 class="mt-4 mb-0"><a class="button" href="#"><i class="fa fa-bullhorn bg-white col_pink p-3"></i><span class="ps-3 pe-3">VIEW GALLERY</span></a></h6>
                     </div>
                 </div>
                 <div class="col-md-6 p-0">
@@ -1412,8 +1316,7 @@
                     <div class="bloh_h1r text-center">
                         <h1 class="font_50">OIL PAINTING</h1>
                         <p class="mt-3"><span class="fw-bold">Acrylic painting</span>, technique in which pigments are mixed with hot, liquid wax. After all of the colours have been applied to the painting surface, a heating element is passed over them until the individual brush or spatula marks fuse into a uniform film.</p>
-                        <h6 class="mt-4 mb-0"><a class="button" href="#"><i class="fa fa-bullhorn bg-white col_pink p-3"></i><%--<span class="ps-3 pe-3">VIEW GALLERY</span>--%>
-                            <asp:Button ID="Button14" runat="server" class="ps-3 pe-3" Text="VIEW GALLERY" /></a></h6>
+                        <h6 class="mt-4 mb-0"><a class="button" href="#"><i class="fa fa-bullhorn bg-white col_pink p-3"></i><span class="ps-3 pe-3">VIEW GALLERY</span></a></h6>
                     </div>
                 </div>
             </div>
@@ -1422,9 +1325,7 @@
                     <div class="bloh_h1r text-center">
                         <h1 class="font_50">IMPASTO</h1>
                         <p class="mt-3"><span class="fw-bold">Other painting</span>, technique in which pigments are mixed with hot, liquid wax. After all of the colours have been applied to the painting surface, a heating element is passed over them until the individual brush or spatula marks fuse into a uniform film.</p>
-                        <h6 class="mt-4 mb-0"><a class="button" href="#"><i class="fa fa-bullhorn bg-white col_pink p-3"></i><%--<span class="ps-3 pe-3">VIEW GALLERY</span>--%>
-                            <asp:Button ID="Button15" class="ps-3 pe-3" runat="server" Text="VIEW GALLERY"/>
-                                              </a></h6>
+                        <h6 class="mt-4 mb-0"><a class="button" href="#"><i class="fa fa-bullhorn bg-white col_pink p-3"></i><span class="ps-3 pe-3">VIEW GALLERY</span></a></h6>
                     </div>
                 </div>
                 <div class="col-md-6 p-0">
@@ -1535,7 +1436,7 @@
                                             <div class="grid clearfix">
                                                 <figure class="effect-jazz mb-0">
                                                     <a href="#">
-                                                        <img src="img/22.jpg" class="w-100" alt="abc"></a>
+                                                        <img src="img/23.jpg" class="w-100" alt="abc"></a>
                                                 </figure>
                                             </div>
                                         </div>
@@ -1571,7 +1472,7 @@
                                             <div class="grid clearfix">
                                                 <figure class="effect-jazz mb-0">
                                                     <a href="#">
-                                                        <img src="img/22.jpg" class="w-100" alt="abc"></a>
+                                                        <img src="img/27.jpg" class="w-100" alt="abc"></a>
                                                 </figure>
                                             </div>
                                         </div>
@@ -1670,33 +1571,31 @@
                     <div class="frame_1r text-center">
                         <p>The secret to so many artists living so long is that every painting is a new adventure. So, you see, they're always looking ahead to something new and exciting. The secret is not to look back.</p>
                         <ul class="nav nav-tabs justify-content-center border-0 mb-0 mt-4">
-                            <%-- <li class="nav-item">
+                            <li class="nav-item">
                                 <a href="#home1" data-bs-toggle="tab" aria-expanded="false" class="nav-link active">
-                                    <%--<span class="d-md-block">All</span>
-                                <%--</a>
-                            </li>--%>
+                                    <span class="d-md-block">All</span>
+                                </a>
+                            </li>
                             <li class="nav-item">
                                 <a href="#profile1" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
-                                    <%-- <span class="d-md-block">CERAMIC</span>--%>
-                                    <asp:Button ID="Button4" class="d-md-block" runat="server" Text="Canvas" />
+                                    <span class="d-md-block">CERAMIC</span>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="#settings1" data-bs-toggle="tab" aria-expanded="false" class="nav-link">
-                                    <%--<span class="d-md-block">PLASTIC</span>--%>
-                                    <asp:Button ID="Button5" class="d-md-block" runat="server" Text="Pepar" />
+                                    <span class="d-md-block">PLASTIC</span>
                                 </a>
                             </li>
-                            <%-- <li class="nav-item">
+                            <li class="nav-item">
                                 <a href="#settings2" data-bs-toggle="tab" aria-expanded="false" class="nav-link">
                                     <span class="d-md-block">WOODEN</span>
                                 </a>
-                            </li>--%>
-                            <%--  <li class="nav-item">
+                            </li>
+                            <li class="nav-item">
                                 <a href="#profile2" data-bs-toggle="tab" aria-expanded="false" class="nav-link">
                                     <span class="d-md-block">STEEL</span>
                                 </a>
-                            </li>--%>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -1733,13 +1632,11 @@
                         <h1 class="mt-4">NEWSLETTER</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
                         <div class="input-group mt-4">
-                            <%--<input type="text" class="form-control" placeholder="Email">--%>
-                            <asp:TextBox ID="TextBox1" placeholder="Email" class="form-control" runat="server"></asp:TextBox>
+                            <input type="text" class="form-control" placeholder="Email">
                             <span class="input-group-btn">
-                                <asp:Button ID="Button11" runat="server" class="btn btn-primary bg_pink font_14 rounded-0" Text="SUBSCRIBE" />
-                                <%--<button class="btn btn-primary bg_pink font_14 rounded-0" type="button">
+                                <button class="btn btn-primary bg_pink font_14 rounded-0" type="button">
                                     SUBSCRIBE
-                                </button>--%>
+                                </button>
                             </span>
                         </div>
                     </div>
@@ -1747,114 +1644,6 @@
             </div>
         </div>
     </section>
+</asp:Content>
 
 
-</asp:Content>
-<asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder3" runat="server">
-    <section id="footer" class="pt-3 pb-3">
-        <div class="container-fluid">
-            <div class="row footer_1">
-                <div class="col-md-3">
-                    <div class="footer_1i">
-                        <hr class="line_1">
-                        <h5 class="mb-3">ABOUT</h5>
-                        <p>Phasellus et nisl tellus. Etiam facilisis eu nisi scelerisque faucibus. Proin semper suscipit magna, nec imperdiet lacus semper vitae. Sed hendrerit enim non justo posuere placerat eget purus mauris.</p>
-                        <p>Etiam facilisis eu nisi scelerisque faucibus. Proin semper suscipit magna, nec imperdiet lacus semper.</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="footer_1i">
-                        <hr class="line_1">
-                        <h5 class="mb-3">RECENT WORKS</h5>
-                        <div class="footer_1i1 row">
-                            <div class="col-md-4 col-4 p-0">
-                                <div class="footer_1i1i">
-                                    <div class="grid clearfix">
-                                        <figure class="effect-jazz mb-0">
-                                            <a href="#">
-                                                <img src="img/30.jpg" class="w-100" alt="abc"></a>
-                                        </figure>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-4 p-0">
-                                <div class="footer_1i1i">
-                                    <div class="grid clearfix">
-                                        <figure class="effect-jazz mb-0">
-                                            <a href="#">
-                                                <img src="img/31.jpg" class="w-100" alt="abc"></a>
-                                        </figure>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-4 p-0">
-                                <div class="footer_1i1i">
-                                    <div class="grid clearfix">
-                                        <figure class="effect-jazz mb-0">
-                                            <a href="#">
-                                                <img src="img/32.jpg" class="w-100" alt="abc"></a>
-                                        </figure>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="footer_1i1 row">
-                            <div class="col-md-4 col-4 p-0">
-                                <div class="footer_1i1i">
-                                    <div class="grid clearfix">
-                                        <figure class="effect-jazz mb-0">
-                                            <a href="#">
-                                                <img src="img/33.jpg" class="w-100" alt="abc"></a>
-                                        </figure>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-4 p-0">
-                                <div class="footer_1i1i">
-                                    <div class="grid clearfix">
-                                        <figure class="effect-jazz mb-0">
-                                            <a href="#">
-                                                <img src="img/34.jpg" class="w-100" alt="abc"></a>
-                                        </figure>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-4 p-0">
-                                <div class="footer_1i1i">
-                                    <div class="grid clearfix">
-                                        <figure class="effect-jazz mb-0">
-                                            <a href="#">
-                                                <img src="img/35.jpg" class="w-100" alt="abc"></a>
-                                        </figure>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="footer_1i">
-                        <hr class="line_1">
-                        <h5 class="mb-3">Categories</h5>
-                        <ul class="mb-0">
-                            <asp:Button ID="Button1" runat="server" Text="WaterColour" />
-                            <asp:Button ID="Button2" runat="server" Text="Oil Paster" />
-                            <asp:Button ID="Button3" runat="server" Text="Acrylic" />
-                            <%--  <li class="d-inline-block"><a class="d-block" href="#">Analyze</a></li>
-                            <li class="d-inline-block"><a class="d-block" href="#">Audio</a></li>
-                            <li class="d-inline-block"><a class="d-block" href="#">Blog</a></li>
-                            <li class="d-inline-block"><a class="d-block" href="#">Business</a></li>
-                            <li class="d-inline-block"><a class="d-block" href="#">Creative</a></li>
-                            <li class="d-inline-block"><a class="d-block" href="#">Design</a></li>
-                            <li class="d-inline-block"><a class="d-block" href="#">Experiment</a></li>
-                            <li class="d-inline-block"><a class="d-block" href="#">News</a></li>
-                            <li class="d-inline-block"><a class="d-block" href="#">Expertize</a></li>
-                            <li class="d-inline-block"><a class="d-block" href="#">Express</a></li>
-                            <li class="d-inline-block"><a class="d-block" href="#">Share</a></li>
-                            <li class="d-inline-block"><a class="d-block" href="#">Sustain</a></li>
-                            <li class="d-inline-block"><a class="d-block" href="#">Video</a></li>
-                            <li class="d-inline-block"><a class="d-block" href="#">Youtube</a></li>--%>
-                        </ul>
-                    </div>
-                </div>
-</asp:Content>
