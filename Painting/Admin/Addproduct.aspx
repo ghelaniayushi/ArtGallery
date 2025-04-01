@@ -1,4 +1,4 @@
-﻿
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Addproduct.aspx.cs" Inherits="Painting.Addproduct" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -89,21 +89,21 @@
 
             <asp:TemplateField HeaderText="Product Type">
                 <ItemTemplate>
-                    <asp:Label ID="Label3" runat="server" Text='<%# Eval("Product_Type") %>'
+                    <asp:Label ID="Label4" runat="server" Text='<%# Eval("Product_Type") %>'
                         Style="padding: 10px; display: block; color: white;"></asp:Label>
                 </ItemTemplate>
             </asp:TemplateField>
 
             <asp:TemplateField HeaderText="Price">
                 <ItemTemplate>
-                    <asp:Label ID="Label4" runat="server" Text='<%# Eval("Product_Price") %>'
+                    <asp:Label ID="Label5" runat="server" Text='<%# Eval("Product_Price") %>'
                         Style="padding: 10px; display: block; font-weight: bold; color: #D81B60;"></asp:Label>
                 </ItemTemplate>
             </asp:TemplateField>
 
             <asp:TemplateField HeaderText="Category Id">
                 <ItemTemplate>
-                    <asp:Label ID="Label5" runat="server" Text='<%# Eval("Category_id") %>'
+                    <asp:Label ID="Label6" runat="server" Text='<%# Eval("Category_id") %>'
                         Style="padding: 10px; display: block; color: white;"></asp:Label>
                 </ItemTemplate>
             </asp:TemplateField>

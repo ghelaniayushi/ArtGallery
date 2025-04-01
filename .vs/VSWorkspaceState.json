@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Painting",
+    "\\Painting\\css",
+    "\\Painting\\User"
   ],
-  "SelectedNode": "\\Painting.sln",
+  "SelectedNode": "\\Painting\\User\\User_Home.aspx",
   "PreviewInSolutionExplorer": false
 }

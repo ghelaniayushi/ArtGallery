@@ -17,7 +17,7 @@ namespace Painting
         DataSet ds;
         Class1 cs;
         PagedDataSource pg;
-        int pid, row;
+        int p, row;
         protected void Page_Load(object sender, EventArgs e)
         {
             getcon();
@@ -29,9 +29,45 @@ namespace Painting
             cs.startcon();
         }
 
-        protected void DataList1_SelectedIndexChanged1(object sender, EventArgs e)
-        {
+      
 
+        protected void LinkButton3_Click(object sender, EventArgs e)//previous
+        {
+            LinkButton3.Enabled = true;
+            p += Convert.ToInt32(ViewState["Product_Id"]) - 1;
+            ViewState["pid"] = Convert.ToInt32(p);
+            if (p == 0)
+            {
+                LinkButton3.Enabled = false;
+                //LinkButton4.Enabled = false;
+            }
+            display();
+
+
+        }
+
+        protected void LinkButton4_Click(object sender, EventArgs e)//next
+        {
+            LinkButton3.Enabled = true;
+
+            p += Convert.ToInt32(ViewState["Product_Id"]) + 1;
+            ViewState["pid"] = Convert.ToInt32(p);
+            int temp = row / pg.PageSize;
+            if (p == temp)
+            {
+                LinkButton4.Enabled = false;
+            }
+            display();
+
+        }
+
+        protected void DataList1_ItemCommand(object source, DataListCommandEventArgs e)
+        {
+            if(e.CommandName=="cmd_detailv")
+            {
+                int id = (Convert.ToInt32(e.CommandArgument));
+                Response.Redirect("detail.aspx?Product_Id=" + id);
+            }
         }
 
         void display()
@@ -44,11 +80,9 @@ namespace Painting
             pg.AllowPaging = true;
             pg.PageSize = 5;
             pg.DataSource = ds.Tables[0].DefaultView;
-            pg.CurrentPageIndex = Convert.ToInt32(ViewState["pid"]);
+            pg.CurrentPageIndex = Convert.ToInt32(ViewState["Product_Id"]);
             DataList1.DataSource = pg;
             DataList1.DataBind();
-
-
         }
 
     }

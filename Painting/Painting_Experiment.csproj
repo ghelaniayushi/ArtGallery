@@ -91,7 +91,6 @@
     <Content Include="css\global.css" />
     <Content Include="css\index.css" />
     <Content Include="css\product.css" />
-    <Content Include="User\detail.aspx" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="img\1.jpg" />
     <Content Include="img\10.jpg" />
@@ -151,6 +150,7 @@
     <Content Include="js\bootstrap.bundle.min.js" />
     <Content Include="Login.aspx" />
     <Content Include="product.aspx" />
+    <Content Include="User\detail.aspx" />
     <Content Include="User\User_Home.aspx" />
     <Content Include="User_Login.aspx" />
     <Content Include="User_Register.aspx" />
@@ -236,13 +236,6 @@
     <Compile Include="contact.aspx.designer.cs">
       <DependentUpon>contact.aspx</DependentUpon>
     </Compile>
-    <Compile Include="User\detail.aspx.cs">
-      <DependentUpon>detail.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="User\detail.aspx.designer.cs">
-      <DependentUpon>detail.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -271,6 +264,13 @@
     </Compile>
     <Compile Include="reg.aspx.designer.cs">
       <DependentUpon>reg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\detail.aspx.cs">
+      <DependentUpon>detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\detail.aspx.designer.cs">
+      <DependentUpon>detail.aspx</DependentUpon>
     </Compile>
     <Compile Include="User\User_Home.aspx.cs">
       <DependentUpon>User_Home.aspx</DependentUpon>

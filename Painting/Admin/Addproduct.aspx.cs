@@ -41,8 +41,8 @@ namespace Painting
             ds = new DataSet();
             ds = cs.SelectProduct(Convert.ToInt32(ViewState["id"]));
             txtProductName.Text = ds.Tables[0].Rows[0]["Product_Name"].ToString();
-            txtdesc.Text = ds.Tables[0].Rows[0]["Description"].ToString();
-            txtPrice.Text = ds.Tables[0].Rows[0]["Price"].ToString();
+            txtdesc.Text = ds.Tables[0].Rows[0]["Product_Description"].ToString();
+            txtPrice.Text = ds.Tables[0].Rows[0]["Product_Price"].ToString();
             ddlcategory.SelectedValue = ds.Tables[0].Rows[0]["Category_id"].ToString();
 
 

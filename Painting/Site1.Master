@@ -22,8 +22,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-            <div class="main clearfix position-relative">
+              <div class="main clearfix position-relative">
                 <div class="main_1 clearfix position-absolute top-0 w-100">
                     <section id="header">
                         <nav class="navbar navbar-expand-md navbar-light" id="navbar_sticky">
@@ -104,7 +103,7 @@
                                             </a>
                                             <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
                                                 <li><a class="dropdown-item" href="<%= ResolveUrl("~/User/cart.aspx") %>">Shopping cart</a></li>
-                                                <li><a class="dropdown-item border-0" href="<%= ResolveUrl("~/User/cart.aspx") %>">Checkout</a></li>
+                                                <li><a class="dropdown-item border-0" href="<%= ResolveUrl("~/User/checkout.aspx") %>">Checkout</a></li>
 
                                             </ul>
                                         </li>
@@ -125,9 +124,9 @@
                             </div>
                         </nav>
                     </section>
+
                 </div>
             </div>
-
 
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
@@ -221,20 +220,7 @@
                                     <asp:Button ID="Button1" runat="server" Text="WaterColour" />
                                     <asp:Button ID="Button2" runat="server" Text="Oil Paster" />
                                     <asp:Button ID="Button3" runat="server" Text="Acrylic" />
-                                    <%-- <li class="d-inline-block"><a class="d-block" href="#">Analyze</a></li>
-                            <li class="d-inline-block"><a class="d-block" href="#">Audio</a></li>
-                            <li class="d-inline-block"><a class="d-block" href="#">Blog</a></li>
-                            <li class="d-inline-block"><a class="d-block" href="#">Business</a></li>
-                            <li class="d-inline-block"><a class="d-block" href="#">Creative</a></li>
-                            <li class="d-inline-block"><a class="d-block" href="#">Design</a></li>
-                            <li class="d-inline-block"><a class="d-block" href="#">Experiment</a></li>
-                            <li class="d-inline-block"><a class="d-block" href="#">News</a></li>
-                            <li class="d-inline-block"><a class="d-block" href="#">Expertize</a></li>
-                            <li class="d-inline-block"><a class="d-block" href="#">Express</a></li>
-                            <li class="d-inline-block"><a class="d-block" href="#">Share</a></li>
-                            <li class="d-inline-block"><a class="d-block" href="#">Sustain</a></li>
-                            <li class="d-inline-block"><a class="d-block" href="#">Video</a></li>
-                            <li class="d-inline-block"><a class="d-block" href="#">Youtube</a></li>--%>
+
                                 </ul>
                             </div>
                         </div>
